@@ -1,0 +1,266 @@
+body {
+  margin: 0;
+  background-color: white;
+}
+
+/* phx background picture  */
+.phx-bg {
+  margin-top: 0;
+  background-position: top;
+  background-repeat: no-repeat;
+  margin-left: 400px;
+  background: transparent;
+  opacity: 0.5;
+}
+
+/* ----Sidebar---- */
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: orange;
+
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: "Bebas Neue", cursive;
+}
+
+.sidebar a {
+  margin-top: 10px;
+  display: block;
+  color: #422313;
+  padding: 18px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+/* Hide Hamburger */
+#page-nav label,
+#hamburger {
+  display: none;
+}
+
+.link:hover {
+  background-color: blanchedalmond;
+  color: #dc5711;
+}
+
+/* Social media  */
+.socialIcon {
+  color: #dc5711;
+  font-size: 38px;
+}
+
+.socialLink:hover {
+  text-decoration: underline blanchedalmond;
+}
+
+/* ------Content Div----- */
+div.content {
+  margin-left: 300px;
+  padding: 10px 16px;
+}
+
+div.content-second {
+  margin-left: 250px;
+  height: 500px;
+  padding: 10px 16px;
+}
+/* Mern logo  */
+.mern-logo {
+  height: 80px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  align-items: right;
+}
+
+/* Intro  */
+
+.tittle {
+  text-align: center;
+  font-size: 70px;
+  letter-spacing: 3px;
+  font-family: "Bebas Neue", cursive;
+  color: #422313;
+}
+
+.tittle-paragraph {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  color: #422313;
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.intro-paragraph {
+  margin-top: 0;
+  font-size: 18px;
+  text-align: center;
+  color: #422313;
+  font-family: "Lato", sans-serif;
+}
+
+.section-title {
+  /* text-align: center; */
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 2px;
+  color: #422313;
+
+  font-size: 50px;
+}
+
+/* Projects   */
+
+.project-title {
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  color: #422313;
+  text-align: center;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+.project-description {
+  font-family: "Lato", sans-serif;
+  text-align: justify;
+  font-size: 16px;
+  color: #422313;
+  letter-spacing: 0.5px;
+  margin-right: 20px;
+}
+.hint {
+  font-size: 14px;
+  font-style: italic;
+  letter-spacing: 0.5px;
+  color: #464646;
+  font-family: "Lato", sans-serif;
+}
+
+.project-background {
+  border-radius: 2px;
+  background-color: rgb(245, 239, 229);
+  box-shadow: 0 10px 10px -5px rgb(75, 74, 74);
+  padding: 20px;
+  margin-top: 0;
+  width: 100%;
+}
+
+/* Project images */
+.project-img {
+  width: 100%;
+  height: auto;
+
+  border-radius: 4px;
+  margin-left: 2px;
+}
+
+/* Github link  */
+.github {
+  padding: 10px;
+  background-color: #ffbf46;
+  box-shadow: 1px 1px 4px rgb(75, 75, 75);
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 550;
+  width: 100px;
+  color: honeydew;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
+}
+
+.github:hover {
+  box-shadow: 1px 1px 4px silver;
+}
+
+/* About me  */
+
+#aboutme,
+#contact {
+  font-size: 40px;
+}
+.aboutme-paragraph,
+.contact-paragraph {
+  letter-spacing: 0.5px;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  color: #422313;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* .sidebar a {float: left;} */
+  div.content,
+  div.content-second,
+  div.mern-logo,
+  div.phx-bg {
+    margin-left: 0;
+  }
+
+  /* burguer  */
+  #page-nav label {
+    display: inline-block;
+    color: #422313;
+    font-style: normal;
+    font-size: 2em;
+    border-radius: 2px;
+    padding: 0;
+
+    margin-right: 100%;
+  }
+
+  .phx-bg {
+    height: auto;
+    width: 200px;
+  }
+
+  /* Break down menu items into vertical */
+  #page-nav ul li {
+    display: block;
+  }
+
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+    padding: 0;
+  }
+
+  #page-nav input:checked ~ ul {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+    font-size: 15px;
+    padding: 0;
+    margin-right: 0;
+  }
+
+  /* Toggle show/hide menu on checkbox click */
+  #page-nav ul {
+    display: none;
+  }
+  #page-nav input:checked ~ ul {
+    display: block;
+  }
+}
