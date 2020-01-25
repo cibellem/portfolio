@@ -1,6 +1,7 @@
-body {
+* {
   margin: 0;
-  background-color: white;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* phx background picture  */
@@ -9,72 +10,61 @@ body {
   background-position: top;
   background-repeat: no-repeat;
   text-align: center;
-
   background: transparent;
-  opacity: 0.5;
   max-width: 100%;
+  border-radius: 100px;
+  filter: drop-shadow(0px 5px 4px rgb(216, 79, 131));
   height: auto;
 }
-div.phx-bg {
-  margin-left: 0;
+
+/* ----NavBar---- */
+
+.link,
+.burger {
+  color: #585772;
 }
-/* ----Sidebar---- */
-
-.sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: rgb(248, 96, 69);
-  position: fixed;
-  height: 100%;
-  overflow: auto;
-
-  text-align: center;
+.nav-links a {
   letter-spacing: 2px;
-  font-family: "Bebas Neue", cursive;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #5f5f79;
+}
+.sidenav {
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  color: #585772;
 }
 
-.sidebar a {
-  margin-top: 50px;
-  display: block;
-  color: #422313;
-  padding: 18px;
-  font-size: 30px;
-  text-decoration: none;
-}
-
-/* Hide Hamburger */
-#page-nav label,
-#hamburger {
-  display: none;
+.app-nav {
+  background-color: white;
+  box-shadow: none;
 }
 
 .link:hover {
-  background-color: blanchedalmond;
-  color: #dc5711;
+  background-color: rgb(236, 228, 240);
+  color: black;
+  transition: 1s;
+  border-radius: 50px;
 }
 
 /* Social media  */
-.socialIcon {
-  color: #e4cdc0;
-  font-size: 38px;
+
+.socialLink {
+  color: #585772;
+  font-size: 40px;
 }
 
 .socialLink:hover {
   text-decoration: underline blanchedalmond;
 }
 
-/* ------Content Div----- */
-div.content {
-  margin-left: 300px;
-  padding: 10px 16px;
-}
-
-div.content-second {
+/* div.content-second {
   margin-left: 250px;
   height: 500px;
   padding: 10px 16px;
-}
+} */
+
 /* Mern logo  */
 .mern-logo {
   height: 80px;
@@ -90,67 +80,68 @@ div.content-second {
 /* Intro  */
 
 .tittle {
-  text-align: center;
-  font-size: 70px;
-  letter-spacing: 3px;
-  font-family: "Bebas Neue", cursive;
-  color: #422313;
+  text-align: left;
+  font-size: 50px;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  color: #585772;
+}
+.content {
+  height: 100vh;
+  align-content: center;
 }
 
 .tittle-paragraph {
   text-align: center;
-  font-family: "Lato", sans-serif;
-  color: #422313;
+  font-family: "Poppins", sans-serif;
+  color: #585772;
   font-size: 14px;
   margin-top: 0;
 }
 
 .intro-paragraph {
   margin-top: 0;
-  font-size: 25px;
-  text-align: center;
-  color: #422313;
-  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  color: #585772;
+  font-family: "Poppins", sans-serif;
 }
 
 .section-title {
-  /* text-align: center; */
-  font-family: "Bebas Neue", cursive;
-  letter-spacing: 2px;
-  color: #422313;
-  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #585772;
+  font-size: 40px;
 }
 
 /* Projects   */
 
 .project-title {
-  font-family: "Lato", sans-serif;
-  font-weight: 600;
-  color: #422313;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #585772;
   text-align: center;
   font-size: 26px;
   letter-spacing: 1px;
 }
 
 .project-description {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: justify;
   font-size: 16px;
-  color: #422313;
-  letter-spacing: 0.5px;
-  margin-right: 20px;
+  color: #585772;
 }
 .hint {
   font-size: 14px;
   font-style: italic;
-  letter-spacing: 0.5px;
-  color: #464646;
-  font-family: "Lato", sans-serif;
+
+  color: #585772;
+  font-family: "Poppins", sans-serif;
 }
 
 .project-background {
   border-radius: 2px;
-  background-color: rgb(245, 239, 229);
+  background-color: white;
   box-shadow: 0 10px 10px -5px rgb(75, 74, 74);
   padding: 20px;
   margin-top: 0;
@@ -161,7 +152,6 @@ div.content-second {
 .project-img {
   width: 100%;
   height: auto;
-
   border-radius: 4px;
   margin-left: 2px;
 }
@@ -177,7 +167,7 @@ div.content-second {
   width: 100px;
   color: honeydew;
   letter-spacing: 1px;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .github:hover {
@@ -192,111 +182,78 @@ div.content-second {
 }
 .aboutme-paragraph,
 .contact-paragraph {
-  letter-spacing: 0.5px;
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   text-align: justify;
-  color: #422313;
+  color: #585772;
   font-weight: 500;
 }
 
 @media screen and (max-width: 800px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-    padding: 0;
-    text-align: center;
-  }
-
-  /* .sidebar a {float: left;} */
-  div.content,
-  div.content-second,
-  div.mern-logo,
-  div.phx-bg {
-    margin-left: 0;
-  }
-
-  /* burguer  */
-  #page-nav label {
-    display: inline-block;
-    color: honeydew;
-    font-style: normal;
-    font-size: 2.5em;
-    border-radius: 2px;
-    padding: 0;
-    height: auto;
-    margin-right: 100%;
-  }
-
   .phx-bg {
     margin-left: 0px;
     max-width: 100%;
     height: auto;
   }
-  /* Break down menu items into vertical */
-  #page-nav ul li {
-    display: block;
-  }
 
-  /* Toggle show/hide menu on checkbox click */
-  #page-nav ul {
-    display: none;
-    padding: 0;
-  }
+  /* Nav Bar links  */
 
-  #page-nav input:checked ~ ul {
-    display: block;
+  .nav-links {
+    font-family: "Poppins", sans-serif;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-    font-size: 19px;
-    padding: 0.5px;
-    overflow: hidden;
-    margin-right: 0;
-    margin-top: 0px;
-  }
-
   .tittle {
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
     letter-spacing: 3px;
-    font-family: "Bebas Neue", cursive;
-    color: #422313;
+    font-family: "Poppins", sans-serif;
   }
 
   .tittle-paragraph {
-    text-align: justify;
-    font-family: "Lato", sans-serif;
-    color: #422313;
+    font-family: "Poppins", sans-serif;
+
     font-size: 14px;
-    margin-top: 0;
   }
 
-  .intro-paragraph {
-    text-align: justify;
-    font-size: 16px;
+  .project-title {
+    font-size: 20px;
+  }
+  .project-description {
+    font-size: 14px;
+  }
+  .sidenav {
+    width: 150px;
+    text-align: center;
+  }
+  .socialIcon {
+    font-size: 2em;
+    text-align: center;
   }
 
-  /* Toggle show/hide menu on checkbox click */
-  #page-nav ul {
-    display: none;
+  .socialLink {
+    font-size: 50px;
   }
-  #page-nav input:checked ~ ul {
-    display: block;
+  .link {
+    margin-top: 20px;
   }
 
   .phx-bg {
-    margin-left: 0px;
     max-width: 100%;
     height: auto;
   }
-  .intro-paragraph {
+
+  .section-title,
+  #aboutme,
+  #contact {
+    font-size: 30px;
+  }
+
+  .intro-paragraph,
+  .aboutme-paragraph,
+  .contact-paragraph {
     margin-top: 0;
-    font-size: 16px;
+    font-size: 14px;
   }
 }

@@ -1,76 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cibelle's Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
-
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Let browser know website is optimized for mobile-->
+    
     <!-- Google Fonts API  -->
-    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Lato&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<body>
-    <!-- The sidebar -->
-    <div id="page-nav" class="sidebar  ">
-
-
-        <label for="hamburger">&#9776;</label>
-        <input type="checkbox" id="hamburger" />
-        <ul>
-            <li> <a class="link" href="#home">Home</a></li>
-            <li><a class="link" href="#projects">Projects</a></li>
-            <li><a class="link" href="#aboutme">About me</a></li>
-
-
+  <body>
+      <div class="navbar-fixed" >
+    <nav class="app-nav">
+      <div class="nav-wrapper">
+        <a href="#!" class="brand-logo"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+          ><i class="burger material-icons">menu</i></a
+        >
+        <ul class="right hide-on-med-and-down nav-links">
+          <li><a class="link" href="#home">Home</a></li>
+          <li><a class="link" href="#projects">Projects</a></li>
+          <li><a class="link" href="#aboutme">About me</a></li>
         </ul>
+      </div>
+    </nav>
+</div>
 
-        <div class="container socialMedia">
+    <ul class="sidenav" id="mobile-demo" >
+      <li><a class="link sidenav-close" href="#home">Home</a></li>
+      <li><a class="link sidenav-close" href="#projects">Projects</a></li>
+      <li><a class="link sidenav-close" href="#aboutme">About me</a></li> 
+      <li class="iconLink " > <a  href="https://github.com/cibellem"><i
+        class="fab fa-github socialIcon "></i></a> </li>  
+      
+   
+            <li class="iconLink "><a  href="https://www.linkedin.com/in/cibelle-montor-2a1a58157"><i
+                class="fab fa-linkedin-in socialIcon "></i></a> </li>
+       
+    </ul>
+     
+   
+                
+                         
+           
+        
+          
+           
+      
+  
 
 
-            <div class="row">
-                <div class="col s6">
-                    <ul>
-                        <li> <a class="socialLink " href="https://github.com/cibellem"><i
-                                    class="fab fa-github socialIcon"></i></a> </li>
-                    </ul>
-                </div>
-                <div class="col s6">
-                    <ul>
-                        <li><a class=" socialLink" href="https://www.linkedin.com/in/cibelle-montor-2a1a58157"><i
-                                    class="fab fa-linkedin-in socialIcon"></i></a> </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-
-
-    </div>
-
-    <!-- Page content -->
     <div id="home" class="content container">
 
         <!-- Intro  -->
 
        
             <div class="row">
-                <div class="col s12 text-center">
-                   
+                <div class="col s12 text-center">                 
 
-                        <h3 class="tittle">Full Stack Web Developer</h3>
-        
+                        <h3 class="tittle">Full Stack <br> Web Developer</h3>      
                  
 
-                </div>
-                
+                </div>               
     
 
             </div>
@@ -81,7 +84,7 @@
 
 
         <div class="row introduction ">
-            <div class="col m12   l12   s12 ">
+            <div class="col m6   l12   s12 ">
                 <p class="intro-paragraph col6">Creative, Full Stack web developer focused on delivering  accessible and friendly user experience.
                     My goal is to build technologies that naturally engage people despite their background, culture or gender. Looking forward to joining a team that values the same.  Brazilian native based in Phoenix, AZ.
                 </p>
@@ -89,36 +92,26 @@
             
 
         </div>
+        <div class="container">
         <div class="row">
             <div class="col l12 m12 s12">
-                <img  class="phx-bg responsive-img"src="./css/images/phx.svg" alt="Phoenix in Svg">
+                <img  class="phx-bg "src="./css/images/phx.svg" alt="Phoenix in Svg">
 
             </div>
         </div>
-
+        </div>
     </div>
-    
-        <!-- <div class="col s4 m6">
-            
-            <div class=" container ">
-                <div class="col l6 m6 s12">
-                    <img  class="phx-bg responsive-img"src="./css/images/phx.svg" alt="Phoenix in Svg">
 
-                </div>
-               
-            </div>
+     
+       
 
 
-        </div> -->
-  
-
-
-    <div class=" content-second ">
+    <div  class=" content-second container ">
 
         <!-- Projects  -->
         <header class="section-title">
 
-            <p id="projects">Projects</p>
+            <p id="projects" >Projects</p>
         </header>
 
         <div class="project-background   z-depth-2">
@@ -374,14 +367,15 @@
     </div>
 
     
-
-    <!-- Compiled and minified JavaScript -->
+    <!--JavaScript at end of body for optimized loading-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <!-- Font Awesome  -->
-
+    
     <script src="https://kit.fontawesome.com/9b22d73af0.js" crossorigin="anonymous"></script>
-
-</body>
-
-
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var elems = document.querySelectorAll(".sidenav");
+        var instances = M.Sidenav.init(elems);
+      });
+    </script>
+  </body>
 </html>
