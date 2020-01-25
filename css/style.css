@@ -24,7 +24,7 @@ div.phx-bg {
   margin: 0;
   padding: 0;
   width: 200px;
-  background-color: orange;
+  background-color: rgb(248, 96, 69);
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -35,7 +35,7 @@ div.phx-bg {
 }
 
 .sidebar a {
-  margin-top: 10px;
+  margin-top: 50px;
   display: block;
   color: #422313;
   padding: 18px;
@@ -254,10 +254,11 @@ div.content-second {
   .sidebar a {
     text-align: center;
     float: none;
-    font-size: 18px;
+    font-size: 19px;
     padding: 0.5px;
     overflow: hidden;
     margin-right: 0;
+    margin-top: 0px;
   }
 
   .tittle {
