@@ -3,7 +3,6 @@ body {
   margin: 0px;
   box-sizing: border-box;
   padding: 0px;
-  overflow: hidden;
 }
 
 /* Mern logo  */
@@ -25,7 +24,6 @@ nav {
   min-height: 8vh;
   box-shadow: none;
   background-color: white;
-  overflow: hidden;
 }
 
 .nav-links {
@@ -336,6 +334,10 @@ nav {
   .contact-paragraph {
     margin-top: 0;
     font-size: 14px;
+  }
+
+  .intro-paragraph {
+    padding: 0px;
   }
   .aboutme-paragraph p {
     align-content: center;
