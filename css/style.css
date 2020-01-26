@@ -316,6 +316,12 @@ nav {
     height: auto;
   }
 
+  .github {
+    padding: 5px;
+    font-size: 7px;
+    font-weight: 550;
+  }
+
   .section-title,
   #aboutme,
   #contact {
