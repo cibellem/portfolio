@@ -229,7 +229,7 @@ nav {
 
 @media screen and (max-width: 780px) {
   body {
-    overflow: hidden;
+    overflow-x: hidden;
   }
 
   .nav-links {
