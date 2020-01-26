@@ -1,10 +1,9 @@
-* {
+body {
+  background-color: #fbfbff;
   margin: 0px;
   box-sizing: border-box;
   padding: 0px;
-}
-body {
-  background-color: #fbfbff;
+  overflow: hidden;
 }
 
 /* Mern logo  */
@@ -26,6 +25,7 @@ nav {
   min-height: 8vh;
   box-shadow: none;
   background-color: white;
+  overflow: hidden;
 }
 
 .nav-links {
@@ -58,7 +58,7 @@ nav {
   height: 3px;
   color: #333333;
   background-color: #e37da8;
-  width: 25px;
+  width: 30px;
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -94,10 +94,13 @@ nav {
 }
 
 .intro-paragraph {
-  margin-top: 0;
+  margin-top: 0px;
   font-size: 16px;
-  text-align: justify;
+  padding: 5px 80px;
+  text-align: center;
   color: #333333;
+  font-weight: 500;
+  line-height: 30px;
   font-family: "Krub", sans-serif;
 }
 
@@ -164,12 +167,12 @@ nav {
 .github {
   padding: 10px;
   background-color: #93e9b0;
-  box-shadow: 1px 1px 4px rgb(75, 75, 75);
+  box-shadow: 0px 2px 3px rgb(75, 75, 75);
   border-radius: 100px;
   font-size: 14px;
   font-weight: 550;
   width: 100px;
-  color: honeydew;
+  color: rgb(255, 254, 254);
   letter-spacing: 1px;
   font-family: "Krub", sans-serif;
 }
@@ -228,7 +231,7 @@ nav {
 
 @media screen and (max-width: 780px) {
   body {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .nav-links {
@@ -340,6 +343,8 @@ nav {
   }
 }
 
-/* @media screen and (max-width: 768px) {
-  
-} */
+@media screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+}
