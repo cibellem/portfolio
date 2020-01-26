@@ -1,69 +1,11 @@
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
   box-sizing: border-box;
+  padding: 0px;
 }
-
-/* phx background picture  */
-.phx-bg {
-  margin-top: 0;
-  background-position: top;
-  background-repeat: no-repeat;
-  text-align: center;
-  background: transparent;
-  max-width: 100%;
-  border-radius: 100px;
-  filter: drop-shadow(0px 5px 4px rgb(216, 79, 131));
-  height: auto;
+body {
+  background-color: #fbfbff;
 }
-
-/* ----NavBar---- */
-
-.link,
-.burger {
-  color: #585772;
-}
-.nav-links a {
-  letter-spacing: 2px;
-  font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  color: #5f5f79;
-}
-.sidenav {
-  letter-spacing: 2px;
-  font-family: "Poppins", sans-serif;
-  font-size: 25px;
-  color: #585772;
-}
-
-.app-nav {
-  background-color: white;
-  box-shadow: none;
-}
-
-.link:hover {
-  background-color: rgb(236, 228, 240);
-  color: black;
-  transition: 1s;
-  border-radius: 50px;
-}
-
-/* Social media  */
-
-.socialLink {
-  color: #585772;
-  font-size: 40px;
-}
-
-.socialLink:hover {
-  text-decoration: underline blanchedalmond;
-}
-
-/* div.content-second {
-  margin-left: 250px;
-  height: 500px;
-  padding: 10px 16px;
-} */
 
 /* Mern logo  */
 .mern-logo {
@@ -77,66 +19,128 @@
   align-items: right;
 }
 
-/* Intro  */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 8vh;
+  box-shadow: none;
+  background-color: white;
+}
 
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  color: #e37da8;
+  font-weight: 600;
+  border-radius: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  font-family: "Krub", sans-serif;
+  letter-spacing: 2px;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.burger div {
+  height: 3px;
+  color: #333333;
+  background-color: #e37da8;
+  width: 25px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+/* Intro  */
+.content {
+  display: flex;
+  flex-direction: column;
+}
 .tittle {
   text-align: left;
-  font-size: 50px;
+  font-size: 45px;
+  font-weight: 500;
   letter-spacing: 2px;
-  font-family: "Poppins", sans-serif;
-  color: #585772;
+  font-family: "Russo One", sans-serif;
+  color: #333333;
 }
-.content {
-  height: 100vh;
-  align-content: center;
+
+.tittle-position {
+  font-size: 40px;
+
+  letter-spacing: 2px;
+  font-family: "Russo One", sans-serif;
+  color: #333333;
 }
 
 .tittle-paragraph {
   text-align: center;
-  font-family: "Poppins", sans-serif;
-  color: #585772;
+  font-family: "Russo One", sans-serif;
+  color: #333333;
   font-size: 14px;
   margin-top: 0;
 }
 
 .intro-paragraph {
   margin-top: 0;
-  font-size: 18px;
+  font-size: 16px;
   text-align: justify;
-  color: #585772;
-  font-family: "Poppins", sans-serif;
+  color: #333333;
+  font-family: "Krub", sans-serif;
 }
 
 .section-title {
-  font-family: "Poppins", sans-serif;
+  font-family: "Russo One", sans-serif;
   font-weight: 500;
-  color: #585772;
+  color: #333333;
   font-size: 40px;
 }
 
+.phx-bg {
+  opacity: 0.7;
+  background-color: #93e9b0;
+  border-radius: 100%;
+  box-shadow: 0px 2px 5px #333333;
+  z-index: -1;
+  /* filter: drop-shadow(1px 2px 1px #333333); */
+}
 /* Projects   */
-
+.project-background {
+  display: flex;
+  flex-direction: column;
+}
 .project-title {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: #585772;
+  font-family: "Russo One", sans-serif;
+  font-weight: lighter;
+  color: #333333;
   text-align: center;
   font-size: 26px;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
 
 .project-description {
-  font-family: "Poppins", sans-serif;
+  font-family: "Krub", sans-serif;
   text-align: justify;
   font-size: 16px;
-  color: #585772;
+  color: #333333;
 }
 .hint {
   font-size: 14px;
   font-style: italic;
-
-  color: #585772;
-  font-family: "Poppins", sans-serif;
+  color: #333333;
+  font-family: "Krub", sans-serif;
 }
 
 .project-background {
@@ -159,7 +163,7 @@
 /* Github link  */
 .github {
   padding: 10px;
-  background-color: #ffbf46;
+  background-color: #93e9b0;
   box-shadow: 1px 1px 4px rgb(75, 75, 75);
   border-radius: 100px;
   font-size: 14px;
@@ -167,7 +171,7 @@
   width: 100px;
   color: honeydew;
   letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Krub", sans-serif;
 }
 
 .github:hover {
@@ -182,38 +186,104 @@
 }
 .aboutme-paragraph,
 .contact-paragraph {
-  font-family: "Poppins", sans-serif;
+  font-family: "Krub", sans-serif;
   font-size: 16px;
   text-align: justify;
-  color: #585772;
+  color: #333333;
   font-weight: 500;
 }
 
-@media screen and (max-width: 800px) {
-  .phx-bg {
-    margin-left: 0px;
-    max-width: 100%;
-    height: auto;
-  }
+.div-aboutme {
+  display: flex;
+  flex-direction: row;
+}
 
-  /* Nav Bar links  */
+.div-aboutme > .aboutme-paragraph {
+  background-color: #93e9b0;
 
+  box-shadow: 0px 2px 5px #333333;
+
+  margin-right: 30px;
+  border-radius: 2px;
+  font-weight: 500;
+}
+.aboutme-paragraph p {
+  align-content: center;
+  padding: 80px;
+  line-height: 28px;
+}
+
+.cibelle {
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
   .nav-links {
-    font-family: "Poppins", sans-serif;
+    width: 60%;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 780px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #93e9b0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    width: 40%;
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(10px);
+    }
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
   .tittle {
-    text-align: center;
     font-size: 35px;
-    letter-spacing: 3px;
-    font-family: "Poppins", sans-serif;
+  }
+  .tittle-position {
+    font-size: 30px;
+    text-align: center;
   }
 
   .tittle-paragraph {
-    font-family: "Poppins", sans-serif;
-
     font-size: 14px;
   }
 
@@ -223,10 +293,7 @@
   .project-description {
     font-size: 14px;
   }
-  .sidenav {
-    width: 150px;
-    text-align: center;
-  }
+
   .socialIcon {
     font-size: 2em;
     text-align: center;
@@ -235,10 +302,15 @@
   .socialLink {
     font-size: 50px;
   }
-  .link {
-    margin-top: 20px;
+
+  .div-aboutme {
+    display: flex;
+    flex-direction: column;
   }
 
+  .cibelle {
+    max-width: 80%;
+  }
   .phx-bg {
     max-width: 100%;
     height: auto;
@@ -256,4 +328,12 @@
     margin-top: 0;
     font-size: 14px;
   }
+  .aboutme-paragraph p {
+    align-content: center;
+    padding: 10px;
+  }
 }
+
+/* @media screen and (max-width: 768px) {
+  
+} */
