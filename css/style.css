@@ -3,6 +3,7 @@ body {
   margin: 0px;
   box-sizing: border-box;
   padding: 0px;
+  position: relative;
 }
 
 /* Mern logo  */
@@ -65,6 +66,8 @@ nav {
 .content {
   display: flex;
   flex-direction: column;
+  /* height: 100vh; */
+  justify-content: space-around;
 }
 .tittle {
   text-align: left;
@@ -94,7 +97,7 @@ nav {
 .intro-paragraph {
   margin-top: 0px;
   font-size: 16px;
-  padding: 5px 80px;
+  padding: 5px 50px;
   text-align: center;
   color: #333333;
   font-weight: 500;
@@ -227,7 +230,8 @@ nav {
 }
 
 @media screen and (max-width: 780px) {
-  body {
+  body,
+  html {
     overflow-x: hidden;
   }
 
@@ -235,7 +239,7 @@ nav {
     z-index: 1;
     position: absolute;
     right: 0px;
-    height: 100vh;
+    height: 50vh;
     top: 8vh;
     background-color: #93e9b0;
     display: flex;
@@ -245,12 +249,16 @@ nav {
     width: 40%;
     transition: transform 0.4s ease-in;
   }
-
+  .nav-links a {
+    font-size: 14px;
+    font-weight: 500;
+  }
   .nav-links li {
-    opacity: 0.2;
+    opacity: 0;
   }
   .burger {
     display: block;
+    margin-right: 10px;
   }
   .nav-active {
     transform: translateX(0%);
@@ -332,12 +340,14 @@ nav {
   .intro-paragraph,
   .aboutme-paragraph,
   .contact-paragraph {
-    margin-top: 0;
+    margin-bottom: 2px;
     font-size: 14px;
   }
 
   .intro-paragraph {
     padding: 0px;
+    text-align: justify;
+    line-height: normal;
   }
   .aboutme-paragraph p {
     align-content: center;
