@@ -6,10 +6,9 @@ body {
   margin: 0px;
   box-sizing: border-box;
   padding: 0px;
-  position: relative;
 }
-html {
-  overflow-x: hidden;
+.wrapper {
+  position: relative;
 }
 
 /* Mern logo  */
@@ -223,9 +222,12 @@ nav {
   flex-direction: row;
 }
 
+.soccer-svg-div {
+  overflow: hidden;
+}
 .soccer-svg {
   z-index: -1;
-  right: -120px;
+  right: -140px;
   position: absolute;
   height: 10vh;
 }
@@ -255,7 +257,7 @@ nav {
 
 @media screen and (max-width: 780px) {
   body,
-  html {
+  .wrapper {
     overflow-x: hidden;
   }
 
@@ -314,7 +316,7 @@ nav {
   .intro-paragraph {
     font-weight: lighter;
     padding: 0px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: justify;
     line-height: 1.5em;
   }
