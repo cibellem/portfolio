@@ -1,16 +1,23 @@
 body {
   background-color: #fbfbff;
+  /* background-color: #815970;
+  background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%); */
+
   margin: 0px;
   box-sizing: border-box;
   padding: 0px;
   position: relative;
 }
+html {
+  overflow-x: hidden;
+}
 
 /* Mern logo  */
 .mern-logo {
-  height: 80px;
+  height: 100px;
   max-width: 100%;
   display: block;
+  border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -24,7 +31,7 @@ nav {
   align-items: center;
   min-height: 8vh;
   box-shadow: none;
-  background-color: white;
+  background-color: #fbfbff;
 }
 
 .nav-links {
@@ -39,11 +46,11 @@ nav {
 
 .nav-links a {
   color: #e37da8;
-  font-weight: 600;
+
   border-radius: 10px;
   font-size: 18px;
   text-decoration: none;
-  font-family: "Krub", sans-serif;
+  font-family: "Russo One", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -66,24 +73,27 @@ nav {
 .content {
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
+
   justify-content: space-around;
 }
-.tittle {
-  text-align: left;
-  font-size: 45px;
-  font-weight: 500;
-  letter-spacing: 2px;
-  font-family: "Russo One", sans-serif;
-  color: #333333;
+
+.intro-name {
+  letter-spacing: 1px;
+  font-family: "Krub", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: black;
 }
 
 .tittle-position {
-  font-size: 40px;
-
+  margin-bottom: 0px;
+  font-size: 60px;
   letter-spacing: 2px;
-  font-family: "Russo One", sans-serif;
-  color: #333333;
+  font-family: "Krub", sans-serif;
+  color: black;
+  font-weight: bold;
 }
 
 .tittle-paragraph {
@@ -91,17 +101,20 @@ nav {
   font-family: "Russo One", sans-serif;
   color: #333333;
   font-size: 14px;
-  margin-top: 0;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .intro-paragraph {
   margin-top: 0px;
   font-size: 16px;
-  padding: 5px 50px;
+  padding: 5px 30px;
   text-align: center;
   color: #333333;
-  font-weight: 500;
+  letter-spacing: 1px;
+  font-weight: 600;
   line-height: 30px;
+  margin-bottom: 0px;
   font-family: "Krub", sans-serif;
 }
 
@@ -113,10 +126,12 @@ nav {
 }
 
 .phx-bg {
-  opacity: 0.7;
-  background-color: #93e9b0;
-  border-radius: 100%;
-  box-shadow: 0px 2px 5px #333333;
+  /* background-color: white; */
+  margin-top: 0px;
+  filter: drop-shadow(0px 3px 5px #ffa69e);
+
+  opacity: 0.5;
+  /* box-shadow: 0px 2px 5px black; */
   z-index: -1;
 }
 /* Projects   */
@@ -137,6 +152,7 @@ nav {
   font-family: "Krub", sans-serif;
   text-align: justify;
   font-size: 16px;
+  letter-spacing: 1px;
   color: #333333;
 }
 .hint {
@@ -196,23 +212,31 @@ nav {
   font-weight: 500;
 }
 
+/* .svg-soccer {
+  z-index: -1;
+  top: 0px;
+  position: absolute;
+} */
+
 .div-aboutme {
   display: flex;
   flex-direction: row;
 }
 
-.div-aboutme > .aboutme-paragraph {
-  background-color: #93e9b0;
+.soccer-svg {
+  z-index: -1;
+  right: -120px;
+  position: absolute;
+  height: 10vh;
+}
 
-  box-shadow: 0px 2px 5px #333333;
+.aboutme-paragraph {
+  /* box-shadow: 0px 2px 5px #333333; */
 
-  margin-right: 30px;
+  /* margin-right: 30px; */
+  margin-right: 300px;
   border-radius: 2px;
   font-weight: 500;
-}
-.aboutme-paragraph p {
-  align-content: center;
-  padding: 80px;
   line-height: 28px;
 }
 
@@ -237,20 +261,28 @@ nav {
 
   .nav-links {
     z-index: 1;
+    justify-content: space-evenly;
+
     position: absolute;
     right: 0px;
-    height: 50vh;
+    height: 200px;
     top: 8vh;
-    background-color: #93e9b0;
+    background-color: #fbfbff;
     display: flex;
     flex-direction: column;
+
     align-items: center;
     transform: translateX(100%);
-    width: 40%;
+    width: 100%;
     transition: transform 0.4s ease-in;
+  }
+  nav {
+    background-color: #fbfbff;
   }
   .nav-links a {
     font-size: 14px;
+
+    letter-spacing: 1px;
     font-weight: 500;
   }
   .nav-links li {
@@ -264,31 +296,8 @@ nav {
     transform: translateX(0%);
   }
 
-  @keyframes navLinkFade {
-    from {
-      opacity: 0;
-      transform: translateX(50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(10px);
-    }
-  }
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  .toggle .line2 {
-    opacity: 0;
-  }
-
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-  .tittle {
-    font-size: 35px;
-  }
   .tittle-position {
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
   }
 
@@ -296,20 +305,24 @@ nav {
     font-size: 14px;
   }
 
+  .intro-name {
+    font-size: 18px;
+  }
+  .content {
+    height: 92vh;
+  }
+  .intro-paragraph {
+    font-weight: lighter;
+    padding: 0px;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 1.5em;
+  }
   .project-title {
     font-size: 20px;
   }
   .project-description {
     font-size: 14px;
-  }
-
-  .socialIcon {
-    font-size: 2em;
-    text-align: center;
-  }
-
-  .socialLink {
-    font-size: 50px;
   }
 
   .div-aboutme {
@@ -337,20 +350,35 @@ nav {
     font-size: 30px;
   }
 
-  .intro-paragraph,
   .aboutme-paragraph,
   .contact-paragraph {
     margin-bottom: 2px;
     font-size: 14px;
+    margin-right: 0px;
   }
 
-  .intro-paragraph {
-    padding: 0px;
-    text-align: justify;
-    line-height: normal;
-  }
   .aboutme-paragraph p {
     align-content: center;
     padding: 10px;
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(10px);
+    }
+  }
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
   }
 }

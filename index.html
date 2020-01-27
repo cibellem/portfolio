@@ -25,17 +25,17 @@
   </head>
 
   <body>
-    <div class="topnav ">
+    <div class="topnav navbar-fixed ">
       <nav class=" " id="intro">
         <div class="logo"></div>
 
-        <ul class="nav-links">
-          <li><a href="#">Intro </a></li>
+        <ul class="nav-links ">
+          <li><a class="sidenav-close" href="#intro">Intro </a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#aboutme">Contact</a></li>
         </ul>
 
-        <div class="burger">
+        <div class="burger ">
           <div class="line1"></div>
           <div class="line2"></div>
           <div class="line3"></div>
@@ -47,19 +47,24 @@
       <!-- Intro  -->
 
       <div class="row">
-        <div class="col s12 m12 text-center">
+        <div class="col s12 m12 ">
           <h3 class="tittle-position">Full Stack Web Developer</h3>
         </div>
       </div>
+      <div class="row">
+        <div class="col">
+          <h6 class="intro-name">Hi there! I'm Cibelle!</h6>
+        </div>
+      </div>
 
-      <div class="row introduction ">
-        <div class="col m6   l12   s12 ">
-          <p class="intro-paragraph col6">
-            <em>Hi there! I'm Cibelle! </em>I'm Full Stack Web developer
-            passionate about building creative and user friendly technologies.
-            My goal on each project it's to build applications that naturally
-            engage people despite their background. Looking forward to joining a
-            team that values the same. Brazilian native based in Phoenix, AZ.
+      <div class="row  ">
+        <div class="col   s12 ">
+          <p class="intro-paragraph">
+            I'm Full Stack Web developer passionate about building creative and
+            user friendly technologies. My goal on each project it's to build
+            applications that naturally engage people despite their background.
+            Looking forward to joining a team that values the same. Brazilian
+            native based in Phoenix, AZ.
           </p>
         </div>
       </div>
@@ -67,7 +72,9 @@
       <div class="row">
         <div class="col m6 s12">
           <img
-            class="phx-bg "
+            class="phx-bg tooltipped"
+            data-position="right"
+            data-tooltip="Phoenix S2"
             src="./css/images/phx.svg"
             alt="Phoenix in Svg"
           />
@@ -213,14 +220,14 @@
           </div>
         </div>
       </div>
-
+      <!-- 
       <div class="col s12 mernDiv  ">
         <img
           class=" title-mystack mern-logo"
-          src="./css/images/mern-img2.jpeg"
+          src="./css/images/mern-img3.webp"
           alt="MERN Stack"
         />
-      </div>
+      </div> -->
 
       <!-- About ME  -->
 
@@ -231,22 +238,18 @@
       <div class="div-aboutme">
         <div class="aboutme-paragraph">
           <p>
-            <q>
-              I'm Cibelle and I'm a brazilian living in the desert. When not
-              coding I enjoy being outdoors hiking, camping, playing soccer. I
-              love politics (weirdly, I know), cultures and languages. I am
-              fluent in English, Portuguese and I am currently learning Spanish.
-              A dream of mine : learn as much languages as possible. Spoken
-              languages and programming languages.
-            </q>
+            When not coding I enjoy being outdoors hiking, camping and playing
+            soccer. I love cultures and languages. I am fluent in English,
+            Portuguese and I am currently learning Spanish. A dream of mine :
+            learn as much languages as possible. Spoken languages and
+            programming languages.
           </p>
         </div>
-
-        <div class="cibelle">
+        <div class="soccer-svg-div ">
           <img
-            class=" responsive-img "
-            src="./css/images/cibelle.png"
-            alt="pic of me"
+            class="soccer-svg responsive-img svg-soccer"
+            src="./css/images/undraw_junior_soccer_6sop.svg"
+            alt=""
           />
         </div>
       </div>
