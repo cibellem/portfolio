@@ -137,10 +137,10 @@ nav {
   z-index: -1;
 }
 /* Projects   */
-.project-background {
+/* .project-background {
   display: flex;
   flex-direction: column;
-}
+} */
 .project-title {
   font-family: "Russo One", sans-serif;
   font-weight: lighter;
@@ -166,8 +166,12 @@ nav {
 
 .project-background {
   border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   background-color: white;
-  box-shadow: 0 10px 10px -5px rgb(75, 74, 74);
+
   padding: 20px;
   margin-top: 0;
   width: 100%;
@@ -179,24 +183,26 @@ nav {
   height: auto;
   border-radius: 4px;
   margin-left: 2px;
+  flex: 1;
 }
 
 /* Github link  */
 .github {
   padding: 10px;
-  background-color: #93e9b0;
-  box-shadow: 0px 2px 3px rgb(75, 75, 75);
-  border-radius: 100px;
+
+  /* box-shadow: 0px 2px 3px rgb(75, 75, 75);
+  border-radius: 100px; */
   font-size: 14px;
-  font-weight: 550;
-  width: 100px;
-  color: rgb(255, 254, 254);
+  font-weight: 600;
+
+  color: #4d98c4;
   letter-spacing: 1px;
   font-family: "Krub", sans-serif;
 }
 
 .github:hover {
-  box-shadow: 1px 1px 4px silver;
+  box-shadow: 0px 1px 4px rgb(48, 47, 47);
+  border-radius: 50px;
 }
 
 /* About me  */
