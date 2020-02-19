@@ -1,7 +1,8 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
 body {
-  background-color: #fbfbff;
-  /* background-color: #815970;
-  background-image: linear-gradient(326deg, #861657 0%, #ffa69e 74%); */
+  background-color: #585858;
 
   margin: 0px;
   box-sizing: border-box;
@@ -32,28 +33,37 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  min-height: 8vh;
   box-shadow: none;
-  background-color: #fbfbff;
+  background: inherit;
+  text-decoration: none !important;
 }
 
 .nav-links {
   display: flex;
   justify-content: space-around;
-  width: 35%;
+  width: 30%;
+  padding: 50px;
+  text-decoration: none !important;
+}
+
+.nav-links a:hover {
+  background-color: inherit !important;
+  text-transform: uppercase;
+  color: #b1a4d0;
 }
 
 .nav-links li {
   list-style: none;
+  border-radius: 30%;
 }
 
 .nav-links a {
-  color: #df5286;
-  border-radius: 10px;
-  font-size: 18px;
-  text-decoration: none;
-  font-family: "Russo One", sans-serif;
+  color: silver;
   letter-spacing: 2px;
+
+  font-size: 19px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }
 
 .burger {
@@ -65,7 +75,7 @@ nav {
 .burger div {
   height: 3px;
   color: #333333;
-  background-color: #df5286;
+  background-color: #b1a4d0;
   width: 30px;
   margin: 5px;
   transition: all 0.3s ease;
@@ -75,152 +85,132 @@ nav {
 .content {
   display: flex;
   flex-direction: column;
+  height: 92vh;
 
   justify-content: space-around;
 }
-
-.intro-name {
-  letter-spacing: 1px;
-  font-family: "Krub", sans-serif;
-  font-size: 40px;
-  text-align: center;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  color: black;
+.container-project {
+  margin-top: 40vh;
 }
-
-.tittle-position {
+.container-aboutme {
+  margin-top: 40vh;
+}
+.intro-name {
   margin-bottom: 0px;
   font-size: 60px;
-  letter-spacing: 2px;
-  font-family: "Krub", sans-serif;
-  color: black;
-  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  color: #b1a4d0;
 }
 
-.tittle-paragraph {
-  text-align: center;
-  font-family: "Russo One", sans-serif;
-  color: #333333;
-  font-size: 14px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+.coder-svg {
+  /* width: 500px;
+  height: auto;
+  justify-content: right; */
+
+  position: absolute;
+  height: auto;
+  width: 40%;
 }
 
 .intro-paragraph {
   margin-top: 0px;
-  font-size: 16px;
-  padding: 5px 30px;
-  text-align: center;
-  color: #333333;
-  letter-spacing: 1px;
-  font-weight: 600;
-  line-height: 30px;
+  font-size: 18px;
+
+  text-align: left;
+  color: lavender;
+
+  border-radius: 4px;
+
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  line-height: 33px;
   margin-bottom: 0px;
-  font-family: "Krub", sans-serif;
 }
 
 .section-title {
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: #333333;
+  color: #eb8596;
   font-size: 40px;
 }
 
 .phx-bg {
   /* background-color: white; */
   margin-top: 0px;
-  filter: drop-shadow(0px 3px 4px #6cb617);
 
-  opacity: 0.7;
+  opacity: 0.8;
+  border-radius: 100%;
   /* box-shadow: 0px 2px 5px black; */
   z-index: -1;
 }
 
 .project-title {
-  font-family: "Russo One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: lighter;
-  color: #333333;
+  color: #b1a4d0;
   text-align: center;
-  font-size: 26px;
-  text-shadow: 1px 1px 1px rgb(180, 180, 180);
-  letter-spacing: 2px;
+
+  font-size: 25px;
 }
 
 .project-description {
-  font-family: "Krub", sans-serif;
-  text-align: justify;
-  font-size: 16px;
-  letter-spacing: 1px;
-  color: #333333;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: white;
   margin: 30px;
-
   align-items: center;
 }
 .hint {
   font-size: 14px;
+  margin-top: 0px;
   font-style: italic;
-  color: #333333;
-  font-family: "Krub", sans-serif;
-}
-
-.project-background {
-  border-radius: 3px;
-
-  /* background: rgba(138, 236, 10, 0.1); */
-  padding: 50px;
-  margin: 30px 100px;
-  background-color: #fbfbff;
+  color: lavender;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Project images */
 .project-img {
   width: 100%;
-  height: auto;
+  height: 300px;
   border-radius: 4px;
-  margin-left: 2px;
-  flex: 1;
+  object-fit: cover;
+  object-position: center;
 }
 
 /* Github link  */
 .github {
-  padding: 10px;
-
   /* box-shadow: 0px 2px 3px rgb(75, 75, 75);
   border-radius: 100px; */
-  font-size: 14px;
-  font-weight: 600;
-
-  color: #4d98c4;
-
-  font-family: "Krub", sans-serif;
+  font-size: 13px;
+  color: rgba(80, 80, 240, 0.774);
+  font-family: "Poppins", sans-serif;
 }
 
 .github:hover {
-  box-shadow: 0px 1px 4px rgb(48, 47, 47);
+  box-shadow: 0px 1px 4px rgb(65, 65, 66);
   border-radius: 50px;
+  background-color: darkblue;
+  padding: 5px;
 }
 
 /* About me  */
 
 #aboutme,
-#contact {
+#contact,
+#projects {
   font-size: 40px;
 }
 .aboutme-paragraph,
 .contact-paragraph {
-  font-family: "Krub", sans-serif;
-  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
   text-align: justify;
-  color: #333333;
-  font-weight: 500;
+  color: lavender;
 }
-
-/* .svg-soccer {
-  z-index: -1;
-  top: 0px;
-  position: absolute;
-} */
 
 .div-aboutme {
   display: flex;
@@ -230,45 +220,42 @@ nav {
 .soccer-svg-div {
   overflow: hidden;
 }
-.soccer-svg {
-  z-index: -1;
-  right: 80px;
-  position: absolute;
-  height: 40%;
-  width: 40%;
-}
+
 .copyright {
-  font-family: "Krub", sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
   font-size: 12px;
-  color: #333333;
+  color: silver;
 }
 .socialIcon {
   font-size: 2.5em;
-  color: #df5286;
-  margin-right: 5px;
+  color: white;
+  margin-right: 30px;
+}
+.myself {
+  height: 350px;
+  position: absolute;
+  left: 1000px;
+  width: 350px;
+  overflow: hidden;
 }
 
 .aboutme-paragraph {
   /* box-shadow: 0px 2px 5px #333333; */
 
   /* margin-right: 30px; */
-  margin-right: 300px;
+  margin-right: 400px;
   border-radius: 2px;
   font-weight: 500;
   line-height: 28px;
 }
 
-.cibelle {
-  /* display: block; */
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 50%;
+  }
+  .myself {
+    position: static;
   }
 }
 
@@ -291,6 +278,10 @@ nav {
     width: 100%;
     right: -140px;
   }
+  .project-img {
+    height: auto;
+    width: 100%;
+  }
   .mern-logo {
     height: 50px;
     max-width: 100%;
@@ -300,27 +291,23 @@ nav {
   .nav-links {
     z-index: 1;
     justify-content: space-evenly;
-
     position: absolute;
     right: 0px;
     height: 200px;
     top: 8vh;
-    background-color: #fbfbff;
     display: flex;
     flex-direction: column;
 
-    align-items: center;
     transform: translateX(100%);
     width: 100%;
     transition: transform 0.4s ease-in;
   }
   nav {
-    background-color: #fbfbff;
+    background-color: none;
   }
   .nav-links a {
-    font-size: 14px;
+    font-size: 18px;
 
-    letter-spacing: 1px;
     font-weight: 500;
   }
   .nav-links li {
@@ -344,18 +331,9 @@ nav {
   }
 
   .intro-name {
-    font-size: 18px;
+    font-size: 50px;
   }
-  /* .content {
-    height: 100vh;
-  } */
-  .intro-paragraph {
-    font-weight: lighter;
-    padding: 0px;
-    font-size: 14px;
-    text-align: justify;
-    line-height: 1.5em;
-  }
+
   .project-title {
     font-size: 20px;
   }
@@ -369,12 +347,10 @@ nav {
     flex-direction: column;
   }
 
-  .cibelle {
-    max-width: 80%;
-  }
-  .phx-bg {
+  .coder-svg {
     max-width: 100%;
     height: auto;
+    align-items: right;
   }
 
   .github {
@@ -386,7 +362,8 @@ nav {
 
   .section-title,
   #aboutme,
-  #contact {
+  #contact,
+  #projects {
     font-size: 30px;
   }
 
@@ -420,5 +397,21 @@ nav {
 
   .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intro-paragraph {
+    font-weight: lighter;
+    padding: 0px;
+    font-size: 16px;
+
+    line-height: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 90%;
   }
 }

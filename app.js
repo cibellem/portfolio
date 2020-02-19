@@ -21,6 +21,10 @@ const navSlide = () => {
 };
 navSlide();
 
+nav.addEventListener("click", () => {
+  navLinks.style.display = "none";
+});
+
 //
 document.addEventListener("DOMContentLoaded", function() {
   var elems = document.querySelectorAll(".tooltipped");
