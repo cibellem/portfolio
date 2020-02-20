@@ -20,8 +20,8 @@ const navSlide = () => {
   });
 };
 navSlide();
-
-nav.addEventListener("click", () => {
+const navLink = document.querySelectorAll(".nav-links li");
+navLink.addEventListener("click", () => {
   navLinks.style.display = "none";
 });
 

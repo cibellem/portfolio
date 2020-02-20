@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 
+body,
+html {
+  height: 100%;
+}
 body {
   background-color: #585858;
 
@@ -90,8 +94,10 @@ nav {
   justify-content: space-around;
 }
 .container-project {
-  margin-top: 40vh;
+  height: 92vh;
+  margin-top: 10%;
 }
+
 .container-aboutme {
   margin-top: 40vh;
 }
@@ -112,6 +118,9 @@ nav {
   position: absolute;
   height: auto;
   width: 40%;
+}
+#projects {
+  margin-top: 20px;
 }
 
 .intro-paragraph {
@@ -257,6 +266,9 @@ nav {
   .myself {
     position: static;
   }
+  .aboutme-paragraph {
+    margin-right: 0px;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -348,9 +360,10 @@ nav {
   }
 
   .coder-svg {
-    max-width: 100%;
+    position: static;
     height: auto;
-    align-items: right;
+    width: 100%;
+    align-items: center;
   }
 
   .github {
@@ -374,10 +387,10 @@ nav {
     margin-right: 0px;
   }
 
-  .aboutme-paragraph p {
+  /* .aboutme-paragraph p {
     align-content: center;
     padding: 10px;
-  }
+  } */
   @keyframes navLinkFade {
     from {
       opacity: 0;
