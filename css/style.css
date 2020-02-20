@@ -89,18 +89,19 @@ nav {
 .content {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 92vh;
 
   justify-content: space-around;
 }
 .container-project {
-  height: 92vh;
   margin-top: 10%;
   vertical-align: middle;
+  width: 90%;
 }
 
 .container-aboutme {
-  margin-top: 40vh;
+  margin-top: 20vh;
+  width: 90%;
 }
 .intro-name {
   margin-bottom: 0px;
@@ -279,10 +280,10 @@ nav {
   /* box-shadow: 0px 2px 5px #333333; */
 
   /* margin-right: 30px; */
-  margin-right: 400px;
+  /* margin-right: 400px; */
   border-radius: 2px;
   font-weight: 500;
-  line-height: 28px;
+  /* line-height: 28px; */
 }
 
 @media screen and (max-width: 1024px) {
@@ -292,165 +293,196 @@ nav {
   .myself {
     position: static;
   }
-  .aboutme-paragraph {
+  /* .aboutme-paragraph {
     margin-right: 0px;
   }
-}
+} */
 
-@media screen and (max-width: 780px) {
-  body,
-  .html {
-    overflow-x: hidden;
-  }
-  .project-background {
-    margin: 0px;
-    padding: 30px;
-  }
-  .wrapper {
-    position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-  .soccer-svg {
-    height: auto;
-    width: 100%;
-    right: -140px;
-  }
-  .project-img {
-    height: auto;
-    width: 100%;
-  }
-  .mern-logo {
-    height: 50px;
-    max-width: 100%;
-    opacity: 0.8;
-  }
+  @media screen and (max-width: 780px) {
+    body,
+    .html {
+      overflow-x: hidden;
+    }
+    .project-background {
+      margin: 0px;
+      padding: 30px;
+    }
+    .wrapper {
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: hidden;
+    }
+    .soccer-svg {
+      height: auto;
+      width: 100%;
+      right: -140px;
+    }
+    .project-img {
+      height: auto;
+      width: 100%;
+    }
+    .mern-logo {
+      height: 50px;
+      max-width: 100%;
+      opacity: 0.8;
+    }
 
-  .nav-links {
-    z-index: 1;
-    justify-content: space-evenly;
-    position: absolute;
-    right: 0px;
-    height: 200px;
-    top: 8vh;
-    display: flex;
-    flex-direction: column;
+    .nav-links {
+      z-index: 1;
+      justify-content: space-evenly;
+      position: absolute;
+      right: 0px;
+      height: 90vh;
+      top: 8vh;
+      display: flex;
+      flex-direction: column;
+      background-color: white;
 
-    transform: translateX(100%);
-    width: 100%;
-    transition: transform 0.4s ease-in;
-  }
-  nav {
-    background-color: none;
-  }
-  .nav-links a {
-    font-size: 18px;
+      transform: translateX(100%);
+      width: 100%;
+      transition: transform 0.4s ease-in;
+    }
+    nav {
+      background-color: none;
+    }
+    .nav-links a {
+      font-size: 18px;
 
-    font-weight: 500;
-  }
-  .nav-links li {
-    opacity: 0;
-  }
-  .burger {
-    display: block;
-    margin-right: 10px;
-  }
-  .nav-active {
-    transform: translateX(0%);
-  }
+      font-weight: 500;
+    }
+    .nav-links li {
+      opacity: 0;
+    }
+    .burger {
+      display: block;
+      margin-right: 10px;
+    }
+    .nav-active {
+      transform: translateX(0%);
+    }
 
-  .tittle-position {
-    font-size: 35px;
-    text-align: center;
-  }
+    .tittle-position {
+      font-size: 35px;
+      text-align: center;
+    }
 
-  .tittle-paragraph {
-    font-size: 14px;
-  }
+    .tittle-paragraph {
+      font-size: 14px;
+    }
 
-  .intro-name {
-    font-size: 50px;
-  }
+    .intro-name {
+      font-size: 50px;
+    }
 
-  .project-title {
-    font-size: 20px;
-  }
-  .project-description {
-    font-size: 14px;
-    margin: 0px;
-  }
+    .project-title {
+      font-size: 20px;
+    }
+    .project-description {
+      font-size: 14px;
+      margin: 0px;
+    }
 
-  .div-aboutme {
-    display: flex;
-    flex-direction: column;
-  }
+    .div-aboutme {
+      display: flex;
+      flex-direction: column;
+    }
 
-  .coder-svg {
-    position: static;
-    height: auto;
-    width: 100%;
-    align-items: center;
-  }
+    .coder-svg {
+      position: static;
+      height: auto;
+      width: 100%;
+      align-items: center;
+    }
 
-  .github {
-    padding: 5px;
-    font-size: 12px;
+    .github {
+      padding: 5px;
+      font-size: 12px;
 
-    font-weight: 550;
-  }
+      font-weight: 550;
+    }
 
-  .section-title,
-  #aboutme,
-  #contact,
-  #projects {
-    font-size: 30px;
-  }
+    .section-title,
+    #aboutme,
+    #contact,
+    #projects {
+      font-size: 30px;
+    }
 
-  .aboutme-paragraph,
-  .contact-paragraph {
-    margin-bottom: 2px;
-    font-size: 14px;
-    margin-right: 0px;
-  }
+    .aboutme-paragraph,
+    .contact-paragraph {
+      margin-bottom: 2px;
+      font-size: 14px;
+      margin-right: 0px;
+    }
 
-  /* .aboutme-paragraph p {
+    /* .aboutme-paragraph p {
     align-content: center;
     padding: 10px;
   } */
-  @keyframes navLinkFade {
-    from {
+    @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(10px);
+      }
+    }
+    .toggle .line1 {
+      transform: rotate(-45deg) translate(-5px, 6px);
+    }
+    .toggle .line2 {
       opacity: 0;
-      transform: translateX(50px);
     }
-    to {
-      opacity: 1;
-      transform: translateX(10px);
+
+    .toggle .line3 {
+      transform: rotate(45deg) translate(-5px, -6px);
     }
   }
-  .toggle .line1 {
-    transform: rotate(-45deg) translate(-5px, 6px);
-  }
-  .toggle .line2 {
-    opacity: 0;
+
+  @media screen and (max-width: 600px) {
+    .section-title {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .intro-paragraph {
+      font-weight: lighter;
+      padding: 0px;
+      font-size: 16px;
+
+      line-height: 1.5em;
+    }
+    .aboutme-paragraph,
+    .contact-paragraph {
+      font-family: "Poppins", sans-serif;
+
+      text-align: center;
+      color: lavender;
+    }
+    .myself {
+      height: auto;
+      width: 50%;
+      /* align-items: center; */
+      /* text-align: center; */
+      /* margin-right: 20px; */
+      margin-left: 25%;
+    }
+    .container-aboutme {
+      margin-top: none;
+    }
+    .socianIcon-div {
+      text-align: center;
+    }
+    .coder-svg {
+      width: 80%;
+      align-items: center;
+    }
   }
 
-  .toggle .line3 {
-    transform: rotate(45deg) translate(-5px, -6px);
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .intro-paragraph {
-    font-weight: lighter;
-    padding: 0px;
-    font-size: 16px;
-
-    line-height: 1.5em;
-  }
-}
-
-@media only screen and (min-width: 993px) {
-  .container {
-    width: 90%;
+  @media only screen and (min-width: 993px) {
+    .container {
+      width: 90%;
+    }
   }
 }

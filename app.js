@@ -26,8 +26,3 @@ navSlide();
 // });
 
 //
-document.addEventListener("click", function() {
-  var elems = document.querySelectorAll(".nav-links li");
-  var instances = M.Dropdown.init(elems, closeOnClick);
-  console.log(instances);
-});
