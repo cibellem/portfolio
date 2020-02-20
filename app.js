@@ -20,13 +20,14 @@ const navSlide = () => {
   });
 };
 navSlide();
-const navLink = document.querySelectorAll(".nav-links li");
-navLink.addEventListener("click", () => {
-  navLinks.style.display = "none";
-});
+// const navLink = document.querySelectorAll(".nav-links li");
+// navLink.addEventListener("click", () => {
+//   navLinks.style.display = "none";
+// });
 
 //
-document.addEventListener("DOMContentLoaded", function() {
-  var elems = document.querySelectorAll(".tooltipped");
-  var instances = M.Tooltip.init(elems);
+document.addEventListener("click", function() {
+  var elems = document.querySelectorAll(".nav-links li");
+  var instances = M.Dropdown.init(elems, closeOnClick);
+  console.log(instances);
 });

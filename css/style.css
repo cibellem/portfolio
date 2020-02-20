@@ -3,7 +3,7 @@
 
 body,
 html {
-  height: 100%;
+  height: 0;
 }
 body {
   background-color: #585858;
@@ -96,6 +96,7 @@ nav {
 .container-project {
   height: 92vh;
   margin-top: 10%;
+  vertical-align: middle;
 }
 
 .container-aboutme {
@@ -121,6 +122,31 @@ nav {
 }
 #projects {
   margin-top: 20px;
+}
+#projects:before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+  pointer-events: none;
+}
+/* #intro:before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
+  visibility: hidden;
+  pointer-events: none;
+} */
+
+#aboutme:before {
+  display: block;
+  content: " ";
+  margin-top: -150px;
+  height: 200px;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .intro-paragraph {
