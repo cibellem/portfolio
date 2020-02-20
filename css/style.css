@@ -90,6 +90,7 @@ nav {
   display: flex;
   flex-direction: column;
   height: 92vh;
+  width: 90%;
 
   justify-content: space-around;
 }
@@ -202,9 +203,11 @@ nav {
 }
 .hint {
   font-size: 14px;
-  margin-top: 0px;
+  margin-top: -11px;
   font-style: italic;
+  margin-bottom: 27px;
   color: lavender;
+  letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
 }
 
@@ -371,15 +374,17 @@ nav {
     }
 
     .intro-name {
-      font-size: 50px;
+      font-size: 45px;
     }
 
     .project-title {
       font-size: 20px;
+      margin-bottom: -11px;
     }
     .project-description {
       font-size: 14px;
       margin: 0px;
+      margin-bottom: 21px;
     }
 
     .div-aboutme {
@@ -414,7 +419,11 @@ nav {
       font-size: 14px;
       margin-right: 0px;
     }
-
+    #aboutme,
+    #contact {
+      font-size: 30px;
+      margin-bottom: -9px;
+    }
     /* .aboutme-paragraph p {
     align-content: center;
     padding: 10px;
@@ -450,6 +459,7 @@ nav {
       font-weight: lighter;
       padding: 0px;
       font-size: 16px;
+      margin-top: 17px;
 
       line-height: 1.5em;
     }
@@ -477,6 +487,8 @@ nav {
     .coder-svg {
       width: 80%;
       align-items: center;
+      margin-left: 70px;
+      margin-top: 19px;
     }
   }
 
