@@ -8,6 +8,7 @@ html {
 }
 body {
   background-color: #585858;
+  background-color: #414b56;
 
   margin: 0px;
   box-sizing: border-box;
@@ -102,7 +103,7 @@ nav {
 }
 
 .container-aboutme {
-  margin-top: 20vh;
+  margin-top: 10vh;
   width: 90%;
 }
 .intro-name {
@@ -156,7 +157,7 @@ nav {
   margin-top: 10px;
   font-size: 25px;
   text-align: left;
-  color: lavender;
+  color: white;
   border-radius: 4px;
   font-weight: 500;
   font-family: "Aleo";
@@ -180,7 +181,9 @@ nav {
 
   font-size: 25px;
 }
-
+#projects {
+  text-align: center;
+}
 .project-description {
   font-family: "Aleo";
   text-align: center;
@@ -191,13 +194,18 @@ nav {
   align-items: center;
 }
 .hint {
-  font-size: 15px;
-  margin-top: -11px;
+  font-size: 16px;
+  margin-top: -8px;
   font-style: italic;
   margin-bottom: 27px;
-  color: lavender;
+  color: whitesmoke;
   letter-spacing: 1px;
   font-family: "Aleo";
+  text-align: center;
+  border-radius: 10px;
+  opacity: 0.5;
+  padding: 10px;
+  margin: 20px 30px;
 }
 
 /* Project images */
@@ -239,7 +247,7 @@ nav {
   font-size: 20px;
   letter-spacing: 1px;
   text-align: justify;
-  color: lavender;
+  color: white;
 }
 
 .div-aboutme {
@@ -369,11 +377,11 @@ nav {
       text-align: center;
     }
     .project-title {
-      font-size: 20px;
+      font-size: 30px;
       margin-bottom: -11px;
     }
     .project-description {
-      font-size: 14px;
+      font-size: 15px;
       margin: 0px;
       margin-bottom: 21px;
     }
@@ -398,21 +406,19 @@ nav {
     }
 
     .section-title,
-    #aboutme,
-    #contact,
     #projects {
-      font-size: 30px;
+      font-size: 35px;
     }
 
     .aboutme-paragraph,
     .contact-paragraph {
       margin-bottom: 2px;
-      font-size: 14px;
+      font-size: 16px;
       margin-right: 0px;
     }
     #aboutme,
     #contact {
-      font-size: 30px;
+      font-size: 35px;
       margin-bottom: -9px;
     }
     /* .aboutme-paragraph p {
@@ -448,8 +454,10 @@ nav {
     }
 
     .hint {
-      font-size: 11px;
+      font-size: 14px;
       text-align: center;
+      letter-spacing: 0px;
+      padding: 0px;
     }
     .intro-paragraph {
       font-weight: lighter;
@@ -464,7 +472,7 @@ nav {
       font-family: "Poppins", sans-serif;
 
       text-align: center;
-      color: lavender;
+      color: white;
     }
     .myself {
       height: auto;
