@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Aleo&display=swap");
 
 body,
 html {
@@ -24,7 +25,7 @@ body {
   height: 100px;
   max-width: 100%;
   display: block;
-  border-radius: 20px;
+  border-radius: 2px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
@@ -37,8 +38,8 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  box-shadow: none;
-  background: inherit;
+  box-shadow: 0px 1px 5px rgb(70, 70, 70);
+  background: ghostwhite;
   text-decoration: none !important;
 }
 
@@ -152,35 +153,23 @@ nav {
 }
 
 .intro-paragraph {
-  margin-top: 0px;
-  font-size: 18px;
-
+  margin-top: 10px;
+  font-size: 25px;
   text-align: left;
   color: lavender;
-
   border-radius: 4px;
-
   font-weight: 500;
-  font-family: "Poppins", sans-serif;
+  font-family: "Aleo";
   line-height: 33px;
+  letter-spacing: 1px;
   margin-bottom: 0px;
 }
 
 .section-title {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  color: #eb8596;
+  color: wheat;
   font-size: 40px;
-}
-
-.phx-bg {
-  /* background-color: white; */
-  margin-top: 0px;
-
-  opacity: 0.8;
-  border-radius: 100%;
-  /* box-shadow: 0px 2px 5px black; */
-  z-index: -1;
 }
 
 .project-title {
@@ -193,22 +182,22 @@ nav {
 }
 
 .project-description {
-  font-family: "Poppins", sans-serif;
+  font-family: "Aleo";
   text-align: center;
-  font-size: 14px;
-  letter-spacing: 0.5px;
+  font-size: 16px;
+  letter-spacing: 1px;
   color: white;
   margin: 30px;
   align-items: center;
 }
 .hint {
-  font-size: 14px;
+  font-size: 15px;
   margin-top: -11px;
   font-style: italic;
   margin-bottom: 27px;
   color: lavender;
   letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Aleo";
 }
 
 /* Project images */
@@ -222,18 +211,19 @@ nav {
 
 /* Github link  */
 .github {
-  /* box-shadow: 0px 2px 3px rgb(75, 75, 75);
-  border-radius: 100px; */
-  font-size: 13px;
-  color: rgba(80, 80, 240, 0.774);
-  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  color: rgb(236, 236, 227);
+  font-family: "Aleo";
+  box-shadow: 0px 1px 4px rgb(65, 65, 66);
+  border-radius: 50px;
+  padding: 5px;
+  background-color: rgb(226, 30, 177);
 }
 
 .github:hover {
-  box-shadow: 0px 1px 4px rgb(65, 65, 66);
+  box-shadow: 0px 1px 5px black;
   border-radius: 50px;
-  background-color: darkblue;
-  padding: 5px;
+  background-color: rgb(226, 30, 177);
 }
 
 /* About me  */
@@ -245,8 +235,9 @@ nav {
 }
 .aboutme-paragraph,
 .contact-paragraph {
-  font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-family: "Aleo";
+  font-size: 20px;
+  letter-spacing: 1px;
   text-align: justify;
   color: lavender;
 }
@@ -339,7 +330,7 @@ nav {
       top: 8vh;
       display: flex;
       flex-direction: column;
-      background-color: white;
+      background-color: ghostwhite;
 
       transform: translateX(100%);
       width: 100%;
@@ -374,9 +365,9 @@ nav {
     }
 
     .intro-name {
-      font-size: 45px;
+      font-size: 44px;
+      text-align: center;
     }
-
     .project-title {
       font-size: 20px;
       margin-bottom: -11px;
@@ -455,12 +446,17 @@ nav {
       text-align: center;
       margin-top: 20px;
     }
+
+    .hint {
+      font-size: 11px;
+      text-align: center;
+    }
     .intro-paragraph {
       font-weight: lighter;
       padding: 0px;
       font-size: 16px;
       margin-top: 17px;
-
+      text-align: center;
       line-height: 1.5em;
     }
     .aboutme-paragraph,
@@ -485,10 +481,10 @@ nav {
       text-align: center;
     }
     .coder-svg {
-      width: 80%;
+      width: 85%;
       align-items: center;
-      margin-left: 70px;
-      margin-top: 19px;
+      margin-left: 5px;
+      margin-top: 25px;
     }
   }
 
