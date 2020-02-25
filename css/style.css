@@ -103,7 +103,7 @@ nav {
 }
 
 .container-aboutme {
-  margin-top: 10vh;
+  margin-top: 20vh;
   width: 90%;
 }
 .intro-name {
@@ -271,11 +271,14 @@ nav {
   margin-right: 30px;
 }
 .myself {
-  height: 350px;
+  height: 400px;
   position: absolute;
   left: 1000px;
-  width: 350px;
+  width: 400px;
   overflow: hidden;
+
+  -moz-border-radius: 99em;
+  border-radius: 99em;
 }
 
 .aboutme-paragraph {
@@ -469,7 +472,7 @@ nav {
     }
     .aboutme-paragraph,
     .contact-paragraph {
-      font-family: "Poppins", sans-serif;
+      font-family: "Aleo";
 
       text-align: center;
       color: white;
