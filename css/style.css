@@ -379,6 +379,7 @@ nav {
     }
 
     .intro-name {
+      margin-top: 0vh;
       font-size: 44px;
       text-align: center;
     }
