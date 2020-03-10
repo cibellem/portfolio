@@ -491,6 +491,9 @@ nav {
     .container-aboutme {
       margin-top: none;
     }
+    .intro-name {
+      margin-top: 0vh;
+    }
     .socianIcon-div {
       text-align: center;
     }
