@@ -7,14 +7,11 @@ html {
   height: 0;
 }
 body {
-  background-color: #585858;
-  background-color: white;
-
-  margin: 0px;
-  box-sizing: border-box;
-  padding: 0px;
+  background-color: #f4f4f4;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .wrapper {
   position: relative;
   overflow-x: hidden;
@@ -35,13 +32,18 @@ body {
   opacity: 0.8;
 }
 
+.topnav {
+  top: 0;
+  transition: top 0.4s;
+}
+
 nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   box-shadow: none;
-  background-color: whitesmoke;
   height: 13vh;
+  background-color: inherit !important;
 
   text-decoration: none !important;
 }
@@ -50,14 +52,15 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 30%;
-  padding: 50px;
+  padding: 60px;
+  transition: 0.4s;
   text-decoration: none !important;
 }
 
 .nav-links a:hover {
-  background-color: inherit !important;
-  text-transform: uppercase;
-  color: #b1a4d0;
+  background-color: whitesmoke !important;
+
+  color: #d5ee66;
 }
 
 .nav-links li {
@@ -66,12 +69,13 @@ nav {
 }
 
 .nav-links a {
-  color: silver;
-  letter-spacing: 2px;
+  color: #363636;
+  letter-spacing: 4px;
 
-  font-size: 19px;
+  font-size: 30px;
   font-weight: bold;
-  font-family: "Poppins", sans-serif;
+  font-family: aleo;
+  letter-spacing: 4px;
 }
 
 .burger {
@@ -83,20 +87,35 @@ nav {
 .burger div {
   height: 3px;
   color: #333333;
-  background-color: #b1a4d0;
+  background-color: #a0d4a4;
   width: 30px;
   margin: 5px;
   transition: all 0.3s ease;
 }
 
+.intro-paragraph,
+.intro-name {
+  font-family: Aleo;
+  color: #363636;
+}
+
+.intro-name {
+  font-weight: bold;
+  font-size: 65px;
+}
+
+.intro-div {
+  margin-top: 30vh;
+}
+
+.svg-div {
+  margin-top: 15vh;
+}
 /* Intro  */
 .content {
   display: flex;
   flex-direction: column;
   height: 92vh;
-  width: 90%;
-
-  justify-content: space-around;
 }
 .container-project {
   margin-top: 10%;
@@ -105,31 +124,33 @@ nav {
 }
 
 .container-aboutme {
-  margin-top: 20vh;
-  width: 90%;
-}
-.intro-name {
-  margin-top: 20vh;
-  margin-bottom: 0px;
-  font-size: 60px;
-  letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
-  text-align: left;
-  color: #b1a4d0;
+  /* margin-top: 20vh; */
+  width: 85%;
 }
 
 .coder-svg {
-  /* width: 500px;
+  box-sizing: border-box;
+  transform: rotate(1.36deg);
+  width: 124%;
   height: auto;
-  justify-content: right; */
-
+  opacity: 0.9;
+}
+.arrow {
+  font-size: 6rem !important;
+  opacity: 0.9;
+  color: #363636;
   position: absolute;
-  height: auto;
-  width: 40%;
+  cursor: pointer;
+
+  top: 600px !important;
+}
+.arrow:hover {
+  text-shadow: 0px 2px 5px rgb(71, 71, 71);
 }
 #projects {
   margin-top: 20px;
 }
+
 #projects:before {
   display: block;
   content: " ";
@@ -157,36 +178,40 @@ nav {
 }
 
 .intro-paragraph {
-  margin-top: 10px;
-  font-size: 25px;
+  font-size: 30px;
   text-align: left;
-  color: #414b56;
+  color: #363636;
   border-radius: 4px;
   font-weight: 500;
   font-family: "Aleo";
-  line-height: 33px;
+  line-height: px;
   letter-spacing: 1px;
   margin-bottom: 0px;
 }
-
+#projects,
+#contact,
+#aboutme {
+  font-size: 50px;
+}
 .section-title {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  color: wheat;
-  font-size: 40px;
+  font-family: "Aleo";
+  font-weight: bold;
+  color: #a0d4a4;
+  letter-spacing: 2px;
 }
 
 .project-title {
   font-family: "Poppins", sans-serif;
-  font-weight: lighter;
-  color: #b1a4d0;
+  font-family: aleo;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #363636;
+
   text-align: center;
 
   font-size: 25px;
 }
-#projects {
-  text-align: center;
-}
+
 .project-description {
   font-family: "Aleo";
   text-align: center;
@@ -197,18 +222,17 @@ nav {
   align-items: center;
 }
 .hint {
-  font-size: 16px;
-  margin-top: -8px;
+  font-size: 17px;
+
   font-style: italic;
-  margin-bottom: 27px;
-  color: #414b56;
+
+  color: #363636;
+  font-weight: lighter;
   letter-spacing: 1px;
   font-family: "Aleo";
-  text-align: center;
-  border-radius: 10px;
-  opacity: 0.7;
-  padding: 10px;
-  margin: 20px 30px;
+  text-align: left;
+
+  opacity: 0.9;
 }
 
 /* Project images */
@@ -239,11 +263,6 @@ nav {
 
 /* About me  */
 
-#aboutme,
-#contact,
-#projects {
-  font-size: 40px;
-}
 .aboutme-paragraph,
 .contact-paragraph {
   font-family: "Aleo";
@@ -258,21 +277,19 @@ nav {
   flex-direction: row;
 }
 
-.soccer-svg-div {
-  overflow: hidden;
-}
-
 .copyright {
-  font-family: "Poppins", sans-serif;
+  font-family: aleo;
   text-align: center;
   font-size: 12px;
-  color: silver;
+  color: rgba(192, 192, 192, 0.808);
 }
 .socialIcon {
   font-size: 2.5em;
-  color: #414b56;
+  color: black;
+
   margin-right: 30px;
 }
+
 .myself {
   height: 400px;
   position: absolute;
@@ -301,10 +318,13 @@ nav {
   .myself {
     position: static;
   }
-  /* .aboutme-paragraph {
-    margin-right: 0px;
+
+  .coder-svg {
+    width: 70%;
+    align-items: center;
+    margin-left: 5px;
+    margin-top: -175px;
   }
-} */
 
   @media screen and (max-width: 780px) {
     body,
@@ -335,34 +355,26 @@ nav {
       opacity: 0.8;
     }
 
-    .nav-links {
-      z-index: 1;
-      justify-content: space-evenly;
-      position: absolute;
-      right: 0px;
-      height: 90vh;
-      top: 8vh;
-      display: flex;
-      flex-direction: column;
-      background-color: ghostwhite;
-
-      transform: translateX(100%);
-      width: 100%;
-      transition: transform 0.4s ease-in;
-    }
     nav {
-      background-color: none;
+      justify-content: center;
+      margin-left: auto 0;
+      background-color: whitesmoke;
+    }
+
+    .nav-links li {
+      margin-left: auto 0;
+      text-align: center;
     }
     .nav-links a {
-      font-size: 18px;
+      font-size: 20px;
+      letter-spacing: 2px;
+      color: #a0d4a4;
+      font-weight: bold;
+      text-align: center;
+    }
 
-      font-weight: 500;
-    }
-    .nav-links li {
-      opacity: 0;
-    }
     .burger {
-      display: block;
+      display: none;
       margin-right: 10px;
     }
     .nav-active {
@@ -384,7 +396,7 @@ nav {
       text-align: center;
     }
     .project-title {
-      font-size: 30px;
+      font-size: 23px;
       margin-bottom: -11px;
     }
     .project-description {
@@ -399,10 +411,10 @@ nav {
     }
 
     .coder-svg {
-      position: static;
-      height: auto;
-      width: 100%;
+      width: 80%;
       align-items: center;
+      margin-left: 5px;
+      margin-top: -125px;
     }
 
     .github {
@@ -428,10 +440,7 @@ nav {
       font-size: 35px;
       margin-bottom: -9px;
     }
-    /* .aboutme-paragraph p {
-    align-content: center;
-    padding: 10px;
-  } */
+
     @keyframes navLinkFade {
       from {
         opacity: 0;
@@ -469,7 +478,7 @@ nav {
     .intro-paragraph {
       font-weight: lighter;
       padding: 0px;
-      font-size: 16px;
+      font-size: 18px;
       margin-top: 17px;
       text-align: center;
       line-height: 1.5em;
@@ -504,13 +513,13 @@ nav {
       width: 80%;
       align-items: center;
       margin-left: 5px;
-      margin-top: 20px;
+      margin-top: -111px;
     }
   }
 
   @media only screen and (min-width: 993px) {
     .container {
-      width: 90%;
+      width: 85%;
     }
   }
 }
