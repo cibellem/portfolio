@@ -20,27 +20,23 @@ const navSlide = () => {
   });
 };
 navSlide();
-const navLink = document.querySelectorAll(".nav-links li");
-navLink.addEventListener("click", () => {
-  navLinks.style.display = "none";
-});
 
 //
 
-function hideNav() {
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.querySelector(".topnav").style.top = "0";
-    } else {
-      document.querySelector(".topnav").style.top = "-65px";
-    }
-    prevScrollpos = currentScrollPos;
-  };
-}
+// function hideNav() {
+//   var prevScrollpos = window.pageYOffset;
+//   window.onscroll = function() {
+//     var currentScrollPos = window.pageYOffset;
+//     if (prevScrollpos > currentScrollPos) {
+//       document.querySelector(".topnav").style.top = "0";
+//     } else {
+//       document.querySelector(".topnav").style.top = "-65px";
+//     }
+//     prevScrollpos = currentScrollPos;
+//   };
+// }
 
-hideNav();
+// hideNav();
 
 function showNav() {
   const navbar = document.querySelector(".topnav ");
@@ -50,8 +46,21 @@ function showNav() {
 }
 showNav();
 
-function arrowDown() {
-  const arrow = document.querySelector(".arrow");
-  arrow.addEventListener("click", function() {});
+//Get the button
+var myarrow = document.querySelector(".arrow");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+  scrollFunction();
+};
+myarrow.addEventListener("click", function() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    myarrow.style.display = "block";
+  } else {
+    myarrow.style.display = "none";
+  }
 }
-arrowDown();
