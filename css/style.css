@@ -198,7 +198,7 @@ nav {
   border-radius: 4px;
   font-weight: 500;
   font-family: "Aleo";
-  line-height: px;
+  /* line-height: px; */
   letter-spacing: 1px;
   margin-bottom: 0px;
 }
@@ -508,7 +508,7 @@ nav {
       font-weight: lighter;
       padding: 0px;
       font-size: 18px;
-      margin-top: 17px;
+      margin-top: 7px;
       text-align: center;
       line-height: 1.5em;
     }
@@ -543,10 +543,10 @@ nav {
       height: 10vh;
     }
     .coder-svg {
-      width: 75%;
+      width: 80%;
       align-items: center;
       margin-left: 5px;
-      margin-top: -130px;
+      margin-top: -140px;
     }
   }
 }
