@@ -1,306 +1,212 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!--Import Google Icon Font-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!--Import materialize.css-->
-    <!-- Compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <!--Let browser know website is optimized for mobile-->
-
-    <!-- FavIcon  -->
-
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-
-    <link rel="manifest" href="/site.webmanifest" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <script
       src="https://kit.fontawesome.com/9b22d73af0.js"
       crossorigin="anonymous"
     ></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap"
+      rel="stylesheet"
+    />
     <title>Cibelle Montor</title>
   </head>
-
   <body>
-    <div class="wrapper">
-      <div class="topnav">
-        <nav>
-          <div class="logo"></div>
+    <!-- Sidenav  -->
+    <div class="sidenav" id="mySidenav">
+      <a class="logo" href="#"
+        ><img src="./assets/css/images/logo.svg" alt="Cibelle's Logo"
+      /></a>
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a class="navlink" href="#home">HOME <i class="fas fa-igloo"></i></a>
+      <a class="navlink" href="#projects"
+        >PROJECTS <i class="fas fa-project-diagram"></i>
+      </a>
+      <a class="navlink" href="#contact"
+        >CONTACT <i class="fas fa-phone"></i
+      ></a>
+    </div>
+    <!-- End of Sidenav  -->
 
-          <ul class="nav-links" id="mobile-demo">
-            <li><a class=" " href="#intro">Home </a></li>
-            <li><a class="  " href="#projects">Projects</a></li>
-            <li><a class="  " href="#contact">Contact</a></li>
-          </ul>
+    <!-- Hmanburger  -->
 
-          <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-          </div>
-        </nav>
+    <div onclick="openNav()" class="hamburguer">&#9776;</div>
+
+    <!-- End of Hmanburger  -->
+
+    <div id="home" class="main">
+      <!-- Homepage  -->
+      <div class="homepage">
+        <h1>
+          Hi :)
+        </h1>
+
+        <h3>
+          I'm Cibelle and I'm a Full Stack Web Developer based in Phoenix ,
+          Arizona. I'm enthusiastic about building data-driven, creative and
+          user friendly applications. Currently working with MERN stack but
+          interested to learn other techs.
+        </h3>
+
+        <button id="button">
+          <span>My work</span>
+          <i class="fas fa-chevron-right"></i>
+        </button>
       </div>
-      <div id="intro" class="content container">
-        <!-- Intro  -->
-        <div class="row">
-          <div class="col s12 m12 l6 intro-div">
-            <h6 class="intro-name s12">Oi,</h6>
-            <p class="intro-paragraph s12">
-              I’m Cibelle and I’m Full Stack Web Developer who is enthusiastic
-              about building creative and user friendly technologies. I’m
-              constant learner who loves new challenges.
-            </p>
-          </div>
 
-          <div class="row">
-            <div class="col m12 l6 s12 svg-div">
-              <img
-                class="coder-svg"
-                src="./css/images/1.svg"
-                alt="Girl in a Computer"
-              />
-            </div>
-          </div>
-        </div>
+      <!-- End of Homepage  -->
+
+      <!-- begin Separator -->
+      <div class="separator">
+        <svg
+          class="separator__svg"
+          width="100%"
+          height="400"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          fill="#9534f532"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M 100 100 V 10 L 0 100" />
+          <path d="M 30 73 L 100 18 V 10 Z" fill="#942bfd" stroke-width="0" />
+        </svg>
       </div>
-
+      <!-- end Separator -->
       <!-- Projects  -->
-      <section class="container container-project">
-        <header class="section-title">
-          <div class="row-gree">
-            <h4 id="projects">Projects</h4>
+      <div id="projects" class="projects">
+        <div class="projects-header">
+          <h2>PROJECTS</h2>
 
-            <p class="hint">
-              You can also check my github repository for each project. <br />
-            </p>
-          </div>
-        </header>
+          <h5>
+            The projcets I considered more relevant I added here. Feel free to
+            take a lok It's a good mix of Html, Css, Sass, Bootstrap,
+            JavaScript, Jquery, React, MongoDB, MySQL, Node, Express
+          </h5>
+        </div>
 
-        <div class="row">
-          <div class="col s12 card m4 l4" style="max-width: 28rem;">
-            <div class="row">
-              <h6 class="project-title">WebSpace</h6>
-            </div>
-
-            <div class="col">
-              <a href="https://thewebspace.herokuapp.com/"
-                ><img
-                  class="z-depth-1 project-img"
-                  src="./css/images/wbspace.png"
-                  alt="screenshot of WebSpace"
-              /></a>
-            </div>
-
-            <p class="project-description col-content">
-              Meet-up style app that allow users to view pertinent information
-              about other individuals attending the gathering. Built with React,
-              Express, MongoDB and Node. To handle authentication we used
-              AWS-Cognito and Amplify.
-              <a class="github" href="https://github.com/verlitas/WebSpace">
-                Github</a
-              >
-            </p>
-          </div>
-
-          <div class="col m4 l4 s12 card" style="max-width: 28rem;">
-            <div class="row">
-              <h6 class="project-title">Pleasantly</h6>
-            </div>
-
-            <div class="col">
-              <div class=" ">
-                <a href="https://lljirie.github.io/Pleasantly">
-                  <img
-                    class="z-depth-2 project-img"
-                    src="./css/images/pleasantly.png"
-                    alt="screenshot of pleasantly app"
-                /></a>
-              </div>
-            </div>
-
-            <p class="project-description col-content">
-              Pleasantly it's a food and cocktail recipes application . You can
-              filter options such as cook time, caloric value and allergies.
-              Trending cooking videos are available to reference. Built with
-              HTML5, CSS3 and JavaScript.
-              <a class="github" href="https://github.com/LLJirie/Pleasantly">
-                Github
+        <div class="projects-img-div">
+          <div class="project-item">
+            <img
+              class="projects-img"
+              src="./assets/css/images/shelfie-laptop.png"
+              alt="Screenshot of Shelfie App"
+            />
+            <p>
+              A simple Full Stack Book Search built with React, MongoDB, Node,
+              and Google Books API.
+              <a href="https://github.com/cibellem/react-bookSearch"
+                ><i class="fab fa-github-square"></i>
               </a>
             </p>
           </div>
 
-          <div class="col m4 card m4 l4" style="max-width: 28rem;">
-            <div class="row">
-              <h6 class="project-title">Weather Dashboard</h6>
-            </div>
-            <div class="col">
-              <div class="">
-                <a href="https://shrouded-sea-44886.herokuapp.com/"
-                  ><img
-                    class="z-depth-2 project-img"
-                    src="./css/images/01.png"
-                    alt="screenshot of reactjs app"
-                /></a>
-              </div>
-            </div>
+          <div class="project-item">
+            <img
+              class="projects-img"
+              src="./assets/css/images/pos-laptop.png"
+              alt="Screenshot of POS Kitchen App"
+            />
+            <p>
+              Check order status in a friendly and readable way. Buil with HTML,
+              CSS, JavaScript, Express, MySQL, and Handlebars.
 
-            <p class="project-description col-content">
-              Built using OpenWeather API and React. The application shows
-              today's weather and a 5 days forecast. The application also
-              displays an icon representation of the actual weather.
-              <a
-                class="github"
-                href="https://github.com/cibellem/react-wdashboard"
-                >Github</a
-              >
+              <a href="https://github.com/cibellem/cleankitchen"
+                ><i class="fab fa-github-square"></i
+              ></a>
+            </p>
+          </div>
+          <div class="project-item">
+            <img
+              class="projects-img"
+              src="./assets/css/images/wxreact.png"
+              alt="Screenshot of React Wx Dashboard"
+            />
+            <p>
+              A simple React Weather Dashboard build with React and Weather Api.
+              <a href="https://github.com/cibellem/react-wdashboard"
+                ><i class="fab fa-github-square"></i
+              ></a>
+            </p>
+          </div>
+          <div class="project-item">
+            <img
+              class="projects-img"
+              src="./assets/css/images/webspace-laptop.png"
+              alt="Screenshot of Web Space App"
+            />
+            <p>
+              WebSpace is a meet-up style app built with React,Node and MongoDB
+              . Users are authenticated trough AWS Cognito.
+              <a href="https://github.com/verlitas/WebSpace"
+                ><i class="fab fa-github-square"></i
+              ></a>
             </p>
           </div>
         </div>
+      </div>
+      <!-- End of Projects  -->
 
-        <div class="row">
-          <div class="col s12 card m4 l4" style="max-width: 28rem;">
-            <div class="row">
-              <h6 class="project-title">Cao A - Educacao Canina</h6>
-            </div>
-            <div class="col">
-              <div class="">
-                <a href="https://www.caoaeduca.com/"
-                  ><img
-                    class="z-depth-2 project-img"
-                    src="./css/images/caoa.png"
-                    alt="screenshot of reactjs app"
-                /></a>
-              </div>
-            </div>
+      <!-- begin Separator -->
+      <div class="separator">
+        <svg
+          class="separator__svg test"
+          width="100%"
+          height="400"
+          viewBox="0 0 100 100"
+          preserveAspectRatio="none"
+          fill="#9534f532"
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M 100 100 V 10 L 0 100" />
+          <path d="M 30 73 L 100 18 V 10 Z" fill="#942bfd" stroke-width="0" />
+        </svg>
+      </div>
+      <!-- end Separator -->
 
-            <p class="project-description col-content">
-              Joe is a dog trainer in Brazil who needed a new webpage to
-              showcase his work. I redesigned the page and made it more
-              accessible, by adding proper fonts, colors and a more organic
-              flow.It was a fun work to do because I know Joe and know his
-              passion for dogs. He loved the outcome.
-            </p>
-          </div>
-
-          <div class="col s12 card m4 l4" style="max-width: 28rem;">
-            <div class="row">
-              <h6 class="project-title">Shelfie - React Book Search</h6>
-            </div>
-            <div class="col">
-              <div class="">
-                <a href="https://react-book-shelfie.herokuapp.com/"
-                  ><img
-                    class="z-depth-2 project-img"
-                    src="./css/images/shelfie.png"
-                    alt="screenshot of shelfie react app"
-                /></a>
-              </div>
-            </div>
-
-            <p class="project-description col-content">
-              Book Search built with MongoDB,Express , React ,Node and Google
-              Books Api. You can browse for books, read about them and save your
-              favorites to the DB.
-              <a
-                class="github"
-                href="https://github.com/cibellem/react-bookSearch"
-                >Github</a
-              >
-            </p>
-          </div>
-          <div class="col s12 card m4 l4" style="max-width: 28rem;">
-            <div class="row">
-              <h6 class="project-title">Clean Kitchen POS</h6>
-            </div>
-            <div class="col">
-              <div class="">
-                <a href="https://ckitchenpos.herokuapp.com/"
-                  ><img
-                    class="z-depth-2 project-img"
-                    src="./css/images/shot.png"
-                    alt="screenshot of pos clean kitchen app"
-                /></a>
-              </div>
-            </div>
-
-            <p class="project-description col-content">
-              Clean Kitchen is a readible and user-friendly PoS System for
-              kitchens. This project was built with JavaScript, CSS, HTML,
-              Express, MySQL and Handlebars.
-              <a class="github" href="https://github.com/cibellem/cleankitchen"
-                >Github</a
-              >
-            </p>
-          </div>
+      <!-- About / Contact  -->
+      <div id="contact" class="contact">
+        <div class="contact-header">
+          <h2>ABOUT <span><></span> CONTACT</h2>
+          <p>I'm open to new opportunities!</p>
         </div>
-      </section>
-
-      <!-- About ME  -->
-      <section class="container container-aboutme">
-        <header class="section-title">
-          <h4 id="aboutme">About Me</h4>
-        </header>
-
-        <div class="div-aboutme row">
-          <div class="aboutme-paragraph col s12">
-            <p class="paragraph-about-me">
-              I'm Brazilian native living in Phoenix. When not coding I enjoy
-              being outdoors camping, hiking or playing soccer. I love languages
-              and besides programming ones, I am fluent in English, Portuguese
-              and I am currently learning Spanish.
-            </p>
-          </div>
-          <div class="col s12">
-            <img class="myself" src="./css/images/cibelle.png" alt="" />
-            <i class="fas fa-arrow-up arrow"> </i>
-          </div>
+        <div class="contact-paragraph">
+          <h5>
+            I’m a certified Full Stack Web Developer who decided to make her
+            addiction in creating short cuts, command-lines and pluggins to my
+            mIRC into a profession! (Good Times!) I’m always cheking new trends
+            and learning new techs to leverage my career . I’m proud to say I
+            have always left my mark in my past workplaces due to my ability to
+            build good relantionship with my coworkers. References? Not a
+            problem, I got tons!
+          </h5>
         </div>
-
-        <header class="section-title">
-          <h4 id="contact">Get in Touch</h4>
-        </header>
-        <!-- Contact  -->
-        <div class="row">
-          <div class="col s12 socianIcon-div">
-            <p class="contact-paragraph">
-              Work Inquires?Chit chat? <br />
-              Feel free to reach out to me:
-            </p>
-
-            <a href="montorcibelle@gmail.com"
-              ><i class="far fa-envelope socialIcon"></i>
-            </a>
-            <a href="https://github.com/cibellem"
-              ><i class="fab fa-github socialIcon"></i
-            ></a>
-            <a href="https://www.linkedin.com/in/cibelle-montor-2a1a58157"
-              ><i class="fab fa-linkedin-in socialIcon"></i
-            ></a>
-          </div>
+        <div class="contact-icons">
+          <a href="https://www.linkedin.com/in/cibelle-montor-2a1a58157/">
+            <i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/cibellem?tab=repositories"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="mailto:montorcibelle@gmail.com"><i class="fas fa-at"></i></a>
         </div>
-      </section>
-
-      <!-- Footer -->
-      <section id="footer">
-        <!-- Copyright -->
-        <ul class="copyright">
-          <li>&copy; All rights reserved 2020</li>
-          <li>Cibelle Montor</li>
-        </ul>
-      </section>
+      </div>
+      <!-- End of About / Contact  -->
+      <div class="footer">
+        <div class="copyright">
+          <p>Cibelle Montor 2020 <i class="fas fa-heart"></i></p>
+        </div>
+        <!-- <div> -->
+        <!-- <p>Made with <i class="fas fa-heart"></i> and JavaScript</p> -->
+        <!-- </div> -->
+      </div>
     </div>
-
-    <!--Scripts-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script src="app.js"></script>
+    <script src="./assets/js/app.js"></script>
   </body>
 </html>

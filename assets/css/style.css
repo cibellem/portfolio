@@ -1,0 +1,306 @@
+/* Global Styles  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+  padding: 0;
+}
+body {
+  background-color: rgba(255, 255, 255, 0.75);
+  font-family: "Red Hat Display", sans-serif;
+
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgba(3, 12, 41, 0.85);
+}
+h1 {
+  font-size: 55px;
+  font-weight: bold;
+  color: rgba(3, 12, 41, 0.85);
+}
+h3 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+p {
+  font-size: 20px;
+  font-weight: normal;
+  color: rgba(3, 12, 41, 0.85);
+}
+h5 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height:*/
+  width: 250px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+
+  background-color: rgba(3, 12, 41, 0.95); /* Black */
+
+  padding-top: 20px;
+  transition: margin 0.25s ease-out;
+}
+
+.hamburguer {
+  display: none;
+}
+
+a > i {
+  color: #942bfdad;
+
+  font-size: 1.5rem;
+}
+
+/* The navigation menu links */
+.sidenav .navlink {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.75);
+  display: block;
+  text-align: left;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 3rem;
+  margin-left: 50px;
+}
+.closebtn {
+  text-decoration: none;
+  font-size: 3rem;
+  color: #bbbbbb;
+  display: none;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.logo {
+  position: absolute;
+  top: 100px;
+  width: 100%;
+  text-align: center;
+  padding: 6px 8px 6px 16px;
+}
+/* Style page content */
+.main {
+  margin-left: 250px;
+}
+
+/* HomagePage Styles  */
+.homepage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  line-height: 3rem;
+
+  text-align: left;
+}
+
+.homepage h2,
+h3 {
+  /* margin-bottom: 20px; */
+  max-width: 60%;
+}
+#button {
+  background: #c5dc3acf;
+  background-color: inherit;
+  border: 4px #942bfd solid;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  /* color: rgba(255, 255, 255, 0.75); */
+  border-radius: 10px;
+  width: 250px;
+
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: "Red Hat Display", sans-serif;
+  padding: 8px;
+  max-width: auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-evenly;
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: #9534f532;
+  transition: 0.5s;
+  color: #942bfd;
+}
+
+/* Section Separator  */
+.separator {
+  bottom: -5px;
+  left: 0;
+  /* overflow: hidden; */
+  position: relative;
+
+  width: 100%;
+}
+/* Projects  */
+
+.fa-github-square {
+  font-size: 2rem;
+  color: black;
+}
+
+.projects {
+  height: auto;
+  transition: all 0.6s ease;
+  background: #9534f532;
+
+  text-align: center;
+}
+
+.projects-header h2,
+h5 {
+  margin-bottom: 30px;
+}
+
+.projects-img-div {
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+}
+.project-item {
+  margin-bottom: 20px;
+  align-items: baseline;
+  flex: 50%;
+  text-align: center;
+}
+
+.project-item p {
+  max-width: auto;
+  text-align: center;
+}
+
+.projects-img {
+  max-width: 60%;
+  opacity: 0.8;
+}
+
+/* About  */
+.contact {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.contact-header span {
+  color: #942bfd;
+}
+.contact-paragraph {
+  text-align: left;
+  justify-content: center;
+  line-height: 37px;
+  display: flex;
+  padding: 8px;
+  width: 80%;
+}
+
+.contact-paragraph h5 {
+  width: 90%;
+}
+
+.contact-icons i {
+  font-size: 6rem;
+  color: #e1e2e6;
+}
+.contact-icons {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+.contact-icons {
+  justify-content: space-evenly;
+}
+
+.test {
+  transform: scaleY(-1);
+  width: 100%;
+  margin-top: -5px;
+}
+/* Footer  */
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: white !important;
+  background-color: #c5dc3acf;
+  padding: 10px;
+}
+
+.copyright {
+  color: white;
+}
+.fa-heart {
+  color: red;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 768px) {
+  .sidenav {
+    display: none;
+  }
+  .main {
+    margin-left: 0;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+  .hamburguer {
+    display: block;
+  }
+  .contact-paragraph h5 {
+    width: 100%;
+  }
+  .contact-icons i {
+    font-size: 4rem;
+  }
+  .project-item {
+    flex: 100%;
+  }
+}
