@@ -30,6 +30,10 @@ h3 {
   color: rgba(3, 12, 41, 0.85);
 }
 
+p {
+  font-size: 0.8em;
+}
+
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height:*/
@@ -155,18 +159,21 @@ h3 {
 
 /* Section Separator  */
 .separator {
-  bottom: -9px;
+  margin-bottom: -1px;
   left: 0;
   overflow: hidden;
   position: relative;
   width: 100%;
+  border-bottom: 0px solid #9534f532;
+}
+.separator__svg {
+  margin-bottom: -9px;
 }
 
 .separator2 {
   bottom: -5px;
   left: 0;
   position: relative;
-
   width: 100%;
 }
 /* Projects  */
@@ -182,7 +189,7 @@ h3 {
   background: #9534f532;
 }
 .projects-header-paragraph {
-  padding: 20px;
+  padding: 8px 20px;
 }
 .projects-header h2 {
   padding: 40px;
@@ -241,7 +248,7 @@ h3 {
   line-height: 1.5em;
   display: flex;
   width: 80%;
-  font-size: 22px !important;
+  /* font-size: 22px !important; */
 }
 
 .contact-paragraph h5 {
@@ -289,7 +296,7 @@ h3 {
     display: none;
   }
   .separator {
-    display: none;
+    margin-bottom: 0px;
   }
   .main {
     margin: auto;
@@ -314,14 +321,19 @@ h3 {
   p {
     /* margin-bottom: 40px; */
 
-    padding: 13px;
+    padding: 0 8px;
   }
 
   .project-item {
     flex: 100%;
   }
+  .contact {
+    justify-content: center;
+  }
   .contact-paragraph {
     width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .contact-icons {
     width: 100%;
