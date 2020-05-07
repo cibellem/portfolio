@@ -12,7 +12,7 @@ html {
 body {
   background-color: rgba(255, 255, 255, 0.75);
   font-family: "Red Hat Display", sans-serif;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 h1 {
   font-size: 2em;
@@ -49,7 +49,7 @@ h3 {
 
 .hamburguer {
   display: none;
-  font-size: 3rem;
+  font-size: 2rem;
   padding-left: 10px;
   color: #942bfd;
 }
@@ -63,7 +63,7 @@ a > i {
 .sidenav .navlink {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 0.8em;
   font-weight: bold;
   color: rgba(255, 255, 255, 0.75);
   display: block;
@@ -98,10 +98,10 @@ a > i {
 
 .logo {
   position: absolute;
-  top: 100px;
+  top: 80px;
   width: 100%;
   text-align: center;
-  padding: 6px 8px 6px 16px;
+  padding: 6px 8px 6px 8px;
 }
 /* Style page content */
 .main {
@@ -134,7 +134,6 @@ h3 {
   /* color: rgba(255, 255, 255, 0.75); */
   border-radius: 10px;
   width: 250px;
-
   font-size: 25px;
   letter-spacing: 1px;
   font-family: "Red Hat Display", sans-serif;
@@ -275,6 +274,7 @@ h3 {
   align-items: center;
   text-align: center;
   font-size: 18px;
+  padding: 10px;
   color: white !important;
   background-color: #c5dc3acf;
 }
@@ -306,18 +306,17 @@ h3 {
   .contact-paragraph h5 {
     width: 100%;
   }
-  /* .contact-paragraph {
-    padding: 20px;
-  } */
+  .contact-paragraph {
+    padding: 0 20px;
+    text-align: left;
+  }
   .projects-header h2,
   p {
     /* margin-bottom: 40px; */
 
     padding: 13px;
   }
-  .contact-icons i {
-    font-size: 4rem;
-  }
+
   .project-item {
     flex: 100%;
   }
@@ -326,6 +325,8 @@ h3 {
   }
   .contact-icons {
     width: 100%;
+    padding-top: 0;
+    margin-top: 0;
   }
   .homepage h2,
   h3 {
