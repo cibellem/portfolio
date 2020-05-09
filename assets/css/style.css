@@ -278,7 +278,7 @@ h3 {
   justify-content: center;
   line-height: 1.5em;
   display: flex;
-  max-width: 70%;
+  max-width: 80%;
   font-size: 25px;
   padding: 30px;
   box-shadow: 0px 4px 8px #9e9e9ef5;
@@ -322,8 +322,55 @@ h3 {
   color: red;
 }
 
+@media screen and (max-width: 780px) {
+  .homepage h3 {
+    line-height: 1.3em;
+  }
+
+  .main {
+    margin-left: 190px;
+  }
+
+  .homepage h1,
+  h3 {
+    margin-bottom: 20px;
+  }
+  .sidenav {
+    width: 190px;
+  }
+  .homepage h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .homepage h3 {
+    font-size: 22px;
+    max-width: 80%;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  .contact-paragraph {
+    text-align: left;
+    max-width: 90%;
+    font-size: 18px;
+  }
+
+  .contact-paragraph {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-icons {
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 550px) {
   .sidenav {
     display: none;
   }
