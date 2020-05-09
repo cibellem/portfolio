@@ -15,17 +15,20 @@ body {
   overflow-x: hidden;
 }
 h1 {
-  font-size: 2em;
+  font-size: 1.8em;
+  font-size: 45px;
   font-weight: bold;
   color: rgba(3, 12, 41, 0.85);
 }
 h2 {
   font-size: 1.5em;
+  font-size: 35px;
 
   color: rgba(3, 12, 41, 0.85);
 }
 h3 {
-  font-size: 1.17em;
+  font-size: 1.15em;
+  font-size: 30px;
 
   color: rgba(3, 12, 41, 0.85);
 }
@@ -42,8 +45,9 @@ h3 {
   flex-direction: column;
   justify-content: center;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.95); /* Black */
+  background-color: #42c75f;
   /* background-color: #0c460c71; */
+
   padding-top: 20px;
   transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
   /* transition: ease-in-out 1s; */
@@ -56,12 +60,12 @@ h3 {
   display: none;
   font-size: 2rem;
   padding-left: 10px;
-  color: #942bfd;
+  color: #42c75f;
 }
 
 a > i {
   color: #942bfdad;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 
 /* The navigation menu links */
@@ -74,7 +78,6 @@ a > i {
   display: block;
   text-align: left;
   margin-bottom: 20px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -128,27 +131,32 @@ a > i {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
-
-  text-align: left;
+  /* 
+  text-align: left; */
 }
 
-.homepage h2,
-h3 {
-  /* margin-bottom: 20px; */
+.homepage h3 {
   font-weight: lighter;
   max-width: 70%;
+  line-height: 1.5em;
 }
+
+.homepage h1,
+h3 {
+  margin-bottom: 40px;
+}
+
 #button {
-  background: #c5dc3acf;
-  background-color: inherit;
+  background: inherit;
   border: 4px #942bfd solid;
-  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   /* color: rgba(255, 255, 255, 0.75); */
   border-radius: 10px;
   width: 250px;
-  font-size: 25px;
+  font-size: 0.9em;
   letter-spacing: 1px;
   font-family: "Red Hat Display", sans-serif;
   padding: 8px;
@@ -190,13 +198,14 @@ h3 {
 
 .fa-github-square {
   font-size: 1rem;
-  color: black;
+  color: #42c75f;
 }
 
 .projects {
   height: auto;
   transition: all 0.6s ease;
   background: #9534f532;
+  background-color: #88d498;
 }
 .projects-header-paragraph {
   padding: 8px 26px;
@@ -208,6 +217,7 @@ h3 {
 }
 .project-description {
   padding: 0 50px;
+  line-height: 1.5em;
 }
 
 .projects-img-div {
@@ -239,9 +249,10 @@ h3 {
   padding: 10px;
 }
 .projects p {
-  font-size: 0.7em;
+  font-size: 18px;
   font-weight: normal;
   color: rgba(3, 12, 41, 0.85);
+  text-align: center;
 }
 /* About  */
 .contact {
@@ -265,13 +276,13 @@ h3 {
 .contact-paragraph {
   text-align: left;
   justify-content: center;
-  line-height: 1.7em;
+  line-height: 1.5em;
   display: flex;
   max-width: 70%;
-  font-size: 0.8em;
+  font-size: 25px;
   padding: 30px;
   box-shadow: 0px 4px 8px #9e9e9ef5;
-  border: 4px #942bfd solid;
+  border: 4px #42c75f solid;
   border-radius: 10px;
 }
 
@@ -323,9 +334,24 @@ h3 {
   .main {
     margin: auto;
   }
-  .homepage {
-    padding: 20px;
+
+  .homepage h3 {
+    line-height: 1.3em;
   }
+
+  .homepage h1,
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  .homepage h1 {
+    font-size: 35px;
+    text-align: center;
+  }
+  .homepage h3 {
+    font-size: 22px;
+  }
+
   .hamburguer {
     display: block;
   }
@@ -338,7 +364,8 @@ h3 {
   .contact-paragraph {
     /* padding: 0 20px; */
     text-align: left;
-    max-width: 80%;
+    max-width: 100%;
+    font-size: 20px;
   }
   .projects-header h2,
   p {
