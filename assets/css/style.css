@@ -10,7 +10,7 @@ html {
   font-size: calc(1em + 1vw);
 }
 body {
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: #ffffff;
   font-family: "Red Hat Display", sans-serif;
   overflow-x: hidden;
 }
@@ -46,7 +46,8 @@ h3 {
   justify-content: center;
   overflow: auto;
   background-color: #42c75f;
-  /* background-color: #0c460c71; */
+  background-color: #f7f7f7;
+  border-right: 1px solid rgba(192, 192, 192, 0.486);
 
   padding-top: 20px;
   transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
@@ -60,31 +61,41 @@ h3 {
   display: none;
   font-size: 2rem;
   padding-left: 10px;
-  color: #42c75f;
-}
-
-a > i {
-  color: #942bfdad;
-  font-size: 0.8rem;
+  color: #d165ab;
 }
 
 /* The navigation menu links */
 .sidenav .navlink {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 0.8em;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.75);
+  font-size: 28px;
+  font-weight: lighter;
+  color: #080808;
   display: block;
-  text-align: left;
-  margin-bottom: 20px;
+  text-align: center;
+  /* margin-bottom: 20vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* padding-right: 24px;
+  padding-left: 24px; */
+}
+.contact-icons {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-right: 24px;
-  padding-left: 24px;
-}
+  justify-content: space-evenly;
+  position: absolute;
+  margin-top: 40vh;
 
+  font-size: 1.5rem;
+}
+.contact-icons i {
+  color: #e1e2e6;
+}
+.contact-icons i:hover {
+  color: #d165ab;
+}
 .sidenav .is-open {
   display: block translateX(0);
   transform: translateX(0);
@@ -105,8 +116,10 @@ a > i {
   display: none;
 }
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
+.sidenav .navlink:hover {
+  background-color: #d165ab;
+  color: #ffffff;
+  transition: 0.5s;
 }
 
 .logo {
@@ -133,8 +146,6 @@ a > i {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* 
-  text-align: left; */
 }
 
 .homepage h3 {
@@ -150,7 +161,7 @@ h3 {
 
 #button {
   background: inherit;
-  border: 4px #942bfd solid;
+  border: 4px #d13399 solid;
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   /* color: rgba(255, 255, 255, 0.75); */
@@ -170,9 +181,9 @@ h3 {
 }
 
 #button:hover {
-  background-color: #9534f532;
+  background-color: #d165ab;
   transition: 0.5s;
-  color: #942bfd;
+  color: #ffffff;
 }
 
 /* Section Separator  */
@@ -196,16 +207,26 @@ h3 {
 }
 /* Projects  */
 
-.fa-github-square {
-  font-size: 1rem;
-  color: #42c75f;
+.github {
+  color: #e9b7d7;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #d13399;
+  padding: 5px;
+  border-radius: 30px;
+}
+
+.github:hover {
+  background-color: white;
+  color: #d13399;
+  transition: 0.8s;
 }
 
 .projects {
   height: auto;
   transition: all 0.6s ease;
   background: #9534f532;
-  background-color: #88d498;
+  background-color: #d165ab;
 }
 .projects-header-paragraph {
   padding: 8px 26px;
@@ -262,16 +283,17 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
 }
 
 .contact-header span {
-  color: #942bfd;
+  color: #d13399;
 }
 
 .contact-header p {
   font-size: 0.7em;
+  margin-bottom: 30px;
 }
 .contact-paragraph {
   text-align: left;
@@ -282,22 +304,8 @@ h3 {
   font-size: 25px;
   padding: 30px;
   box-shadow: 0px 4px 8px #9e9e9ef5;
-  border: 4px #42c75f solid;
+  border: 4px #d13399 solid;
   border-radius: 10px;
-}
-
-.contact-icons i {
-  font-size: 3rem;
-
-  color: #e1e2e6;
-}
-.contact-icons {
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-}
-.contact-icons {
-  justify-content: space-evenly;
 }
 
 .test {
@@ -315,7 +323,7 @@ h3 {
   font-size: 0.7em;
   padding: 10px;
   color: white !important;
-  background-color: #942bfd;
+  background-color: #d165ab;
 }
 
 .fa-heart {
@@ -337,6 +345,9 @@ h3 {
   }
   .sidenav {
     width: 190px;
+  }
+  .sidenav .navlink {
+    font-size: 20px;
   }
   .homepage h1 {
     font-size: 35px;
@@ -362,11 +373,6 @@ h3 {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .contact-icons {
-    width: 100%;
-    padding-top: 0;
-    margin-top: 0;
-  }
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
@@ -377,7 +383,9 @@ h3 {
   .separator {
     margin-bottom: 0px;
   }
-
+  .sidenav .navlink {
+    font-size: 20px;
+  }
   .main {
     margin: auto;
   }
@@ -435,10 +443,5 @@ h3 {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-  }
-  .contact-icons {
-    width: 100%;
-    padding-top: 0;
-    margin-top: 0;
   }
 }
