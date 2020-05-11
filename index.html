@@ -81,11 +81,11 @@
           height="200"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
-          fill="#d165ab"
+          fill="#ff6347b4"
           version="1.1"
         >
           <path d="M 100 100 V 10 L 0 100" />
-          <path d="M 30 73 L 100 18 V 10 Z" fill="#d13399" stroke-width="" />
+          <path d="M 30 73 L 100 18 V 10 Z" fill="#ff6347" stroke-width="" />
         </svg>
       </div>
       <!-- end Separator -->
@@ -178,17 +178,17 @@
       <!-- begin Separator -->
       <div class="separator2">
         <svg
-          class="separator__svg test"
+          class="separator__svg separator-second"
           width="100%"
           height="300"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
-          fill="#d165ab"
+          fill="#ff6347b4"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path d="M 100 100 V 10 L 0 100" />
-          <path d="M 30 73 L 100 18 V 10 Z" fill="#d13399" stroke-width="0" />
+          <path d="M 30 73 L 100 18 V 10 Z" fill="#ff6347" stroke-width="0" />
         </svg>
       </div>
       <!-- end Separator -->
@@ -210,26 +210,33 @@
             my coworkers.
           </p>
         </div>
-        <!-- <div class="contact-icons">
-          <a href="https://www.linkedin.com/in/cibelle-montor-2a1a58157/">
-            <i class="fab fa-linkedin"></i
-          ></a>
-          <a href="https://github.com/cibellem?tab=repositories"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="mailto:montorcibelle@gmail.com"><i class="fas fa-at"></i></a>
-        </div> -->
+      </div>
+      <!-- Contact Form  -->
+      <div class="form-div">
+        <h3>REACH OUT! <span></span></h3>
+      </div>
+      <div class="container">
+        <label> Name:</label>
+        <input type="text" id="name" name="name" />
+
+        <label>Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="subject">Message:</label>
+        <textarea id="message" name="subject" style="height: 200px;"></textarea>
+
+        <button id="submit">Submit</button>
       </div>
       <!-- End of About / Contact  -->
       <div class="footer">
         <div class="copyright">
           <p>Cibelle Montor 2020 <i class="fas fa-heart"></i></p>
         </div>
-        <!-- <div> -->
-        <!-- <p>Made with <i class="fas fa-heart"></i> and JavaScript</p> -->
-        <!-- </div> -->
       </div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/form.js"></script>
   </body>
 </html>
