@@ -21,41 +21,23 @@ const userMessage = document.querySelector("#message");
 const submit = document.querySelector("#submit");
 //Connection to my colletions with Firebase
 const db = firestore.collection("contacts");
+var form_being_submitted = false;
 
 //Submit event and check if inputs are empty
 submit.addEventListener("click", function (event) {
   event.preventDefault();
-
+  var buttonSubmit = event.target;
+  var text;
   let user = userName.value;
   let email = userEmail.value;
   let message = userMessage.value;
   if (!user || !email || !message) {
-    console.log("missing");
-    let container = document.querySelector(".container");
-    let error = document.createElement("p");
-    let errorMsg = document.createTextNode("You are missing something! :)");
-    error.classList.add("error-msg");
-    error.appendChild(errorMsg);
-    container.prepend(error);
-    //in 4 sec message will be none
-    setTimeout(function () {
-      error.classList.add("error-msg-hide");
-    }, 3000);
-  } else {
-    console.log("sent");
-    let container = document.querySelector(".container");
-    let success = document.createElement("p");
-    let successMsg = document.createTextNode(
-      "Thanks! I will reach out back soon :)"
-    );
-    success.classList.add("success-msg");
-    success.appendChild(successMsg);
-    container.prepend(success);
-    //in 4 sec message will be none
-    setTimeout(function () {
-      success.classList.add("success-msg-hide");
-    }, 3000);
+    text = "You are missing something...";
 
+    document.getElementById("error").innerHTML = text;
+  } else {
+    text = "Thank you!  I will get back to you soon!";
+    document.getElementById("error").innerHTML = text;
     db.doc()
       .set({
         name: user,

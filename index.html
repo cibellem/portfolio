@@ -215,24 +215,25 @@
       <!-- <div class="form-div">
         <h3>REACH OUT! <span></span></h3>
       </div> -->
-      <form id="myForm">
-        <div class="container">
-          <label> Name:</label>
-          <input type="text" id="name" name="form" />
 
-          <label>Email:</label>
-          <input type="email" id="email" name="form"/>
+      <div class="container">
+        <small id="error"></small>
+        <h3>GET IN TOUCH!</h3>
+        <label> Name:</label>
 
-          <label for="subject">Message:</label>
-          <textarea
-            id="message"
-            name="form"
-            style="height: 200px;"
-          ></textarea>
+        <input type="text" id="name" name="form" required />
 
-          <button id="submit">Submit</button>
-        </div>
-      </form>
+        <label>Email:</label>
+
+        <input type="email" id="email" name="form" required />
+
+        <label for="subject">Message:</label>
+
+        <textarea id="message" name="form" style="height: 200px;"></textarea>
+
+        <button id="submit">Submit</button>
+      </div>
+
       <!-- End of About / Contact  -->
       <div class="footer">
         <div class="copyright">

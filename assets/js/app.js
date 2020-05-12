@@ -9,7 +9,7 @@ let buttonAction = document.getElementById("button");
 buttonAction.addEventListener("click", scrollToProjects);
 
 function scrollToProjects() {
-  window.scrollTo(0, 1000);
+  window.scrollTo(0, 900);
 }
 
 /* Set the width of the side navigation to 250px */

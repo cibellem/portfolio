@@ -322,6 +322,12 @@ h3 {
   justify-content: center;
   flex-direction: column;
 }
+.container h3 {
+  text-align: center;
+  font-weight: lighter;
+  color: white;
+  background-color: #ff6347b4;
+}
 input[type="text"],
 input[type="email"],
 select,
@@ -346,7 +352,7 @@ label {
   color: #ff6347;
 }
 #submit {
-  background-color: rgb(56, 146, 104);
+  background-color: rgba(38, 134, 86, 0.822);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -380,25 +386,12 @@ label {
   text-align: center;
 }
 
-.error-msg {
-  display: block;
+#error {
   font-size: 14px;
   text-align: center;
   color: gray;
 }
-.error-msg-hide {
-  display: none;
-}
 
-.success-msg-hide {
-  display: none;
-}
-.success-msg {
-  display: block;
-  font-size: 14px;
-  text-align: center;
-  color: green;
-}
 /* Footer  */
 
 .footer {
