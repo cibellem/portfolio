@@ -207,7 +207,7 @@ h3 {
 /* Projects  */
 
 .github {
-  color: #e9b7d7;
+  color: #faf3f7;
   font-size: 15px;
   text-decoration: none;
   background-color: tomato;
@@ -220,15 +220,17 @@ h3 {
   color: #ff6347b4;
   transition: 0.8s;
 }
-
+.project-description span {
+  background-color: rgb(117, 111, 206);
+  border-radius: 30px;
+  padding: 5px;
+  font-size: 14px;
+}
 .projects {
   height: auto;
   transition: all 0.6s ease;
   background: #9534f532;
   background-color: #ff6347b4;
-}
-.projects-header-paragraph {
-  padding: 8px 26px;
 }
 
 .projects-header h2 {
@@ -303,8 +305,8 @@ h3 {
   display: flex;
   max-width: 70%;
   font-size: 25px;
-  padding: 30px;
-  box-shadow: 0px 4px 8px #2a2828f5;
+  padding: 40px;
+  box-shadow: 0px 4px 6px #0e0d0d8a;
   border: 4px tomato solid;
   border-radius: 10px;
 }
@@ -325,8 +327,8 @@ h3 {
 .container h3 {
   text-align: center;
   font-weight: lighter;
-  color: white;
-  background-color: #ff6347b4;
+  color: #222222;
+  font-size: 20px;
 }
 input[type="text"],
 input[type="email"],
@@ -348,7 +350,7 @@ textarea:focus {
   outline: none;
 }
 label {
-  font-size: 20px;
+  font-size: 18px;
   color: #ff6347;
 }
 #submit {
@@ -361,6 +363,7 @@ label {
   font-family: inherit;
   width: 50%;
   margin: auto;
+  font-size: 18px;
 }
 
 #submit:hover {
@@ -399,7 +402,7 @@ label {
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  font-size: 0.7em;
+  font-size: 16px;
   padding: 10px;
   color: white !important;
   background-color: tomato;
@@ -496,7 +499,7 @@ label {
     display: block;
   }
   .project-description {
-    padding: 0 20px;
+    padding: 0 13px;
   }
   .contact-paragraph h5 {
     width: 100%;
