@@ -220,12 +220,7 @@ h3 {
   color: #ff6347b4;
   transition: 0.8s;
 }
-.project-description span {
-  background-color: rgb(117, 111, 206);
-  border-radius: 30px;
-  padding: 5px;
-  font-size: 14px;
-}
+
 .projects {
   height: auto;
   transition: all 0.6s ease;
@@ -234,8 +229,7 @@ h3 {
 }
 
 .projects-header h2 {
-  padding: 8px 28px;
-  text-align: center;
+  padding: 20px 50px;
 }
 .project-description {
   padding: 0 50px;
@@ -272,9 +266,13 @@ h3 {
 }
 .projects p {
   font-size: 18px;
-  font-weight: normal;
-  color: rgba(3, 12, 41, 0.85);
-  text-align: center;
+
+  /* color: rgba(3, 12, 41, 0.85); */
+  text-align: left;
+}
+.projects-header-paragraph {
+  padding: 0 50px;
+  line-height: 1.5em;
 }
 /* About  */
 .contact {
@@ -306,8 +304,8 @@ h3 {
   max-width: 70%;
   font-size: 25px;
   padding: 40px;
-  box-shadow: 0px 4px 6px #0e0d0d8a;
-  border: 4px tomato solid;
+  box-shadow: 0px 4px 6px #706e6e8a;
+  border: 8px tomato solid;
   border-radius: 10px;
 }
 
@@ -324,7 +322,8 @@ h3 {
   justify-content: center;
   flex-direction: column;
 }
-.container h3 {
+.container h3,
+p {
   text-align: center;
   font-weight: lighter;
   color: #222222;
@@ -351,10 +350,10 @@ textarea:focus {
 }
 label {
   font-size: 18px;
-  color: #ff6347;
+  /* color: #ff6347; */
 }
 #submit {
-  background-color: rgba(38, 134, 86, 0.822);
+  background-color: rgb(119, 206, 111);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -385,7 +384,8 @@ label {
 .form-div {
   margin-top: -30;
 }
-.form-div h3 {
+.form-div h3,
+p {
   text-align: center;
 }
 
@@ -509,13 +509,6 @@ label {
     text-align: left;
     max-width: 85%;
     font-size: 18px;
-  }
-
-  .projects-header h2,
-  p {
-    /* margin-bottom: 40px; */
-
-    padding: 0 10px;
   }
 
   .project-item {
