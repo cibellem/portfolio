@@ -266,8 +266,6 @@ h3 {
 }
 .projects p {
   font-size: 18px;
-
-  /* color: rgba(3, 12, 41, 0.85); */
   text-align: left;
 }
 .projects-header-paragraph {
@@ -301,7 +299,7 @@ h3 {
   justify-content: center;
   line-height: 1.5em;
   display: flex;
-  max-width: 70%;
+  max-width: 80%;
   font-size: 25px;
   padding: 40px;
   box-shadow: 0px 4px 6px #706e6e8a;
@@ -321,6 +319,10 @@ h3 {
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+.container h2 {
+  color: #222222;
+  text-align: center;
 }
 .container h3,
 p {
@@ -350,8 +352,8 @@ textarea:focus {
 }
 label {
   font-size: 18px;
-  /* color: #ff6347; */
 }
+
 #submit {
   background-color: rgb(119, 206, 111);
   color: white;
@@ -375,7 +377,7 @@ label {
   background-color: inherit;
   border: 1px solid rgba(128, 128, 128, 0.342);
   padding: 20px;
-  width: 70%;
+  width: 80%;
   display: flex;
   justify-content: center;
   margin: auto;
@@ -383,10 +385,6 @@ label {
 }
 .form-div {
   margin-top: -30;
-}
-.form-div h3,
-p {
-  text-align: center;
 }
 
 #error {
@@ -448,6 +446,7 @@ p {
     text-align: left;
     max-width: 90%;
     font-size: 18px;
+    padding: 0 30px;
   }
 
   .contact-paragraph {
@@ -475,6 +474,10 @@ p {
     margin-top: 10px;
     width: 90%;
   }
+  .container h3 {
+    font-size: 16px;
+    text-align: left;
+  }
   .homepage h3 {
     line-height: 1.3em;
   }
@@ -498,28 +501,31 @@ p {
   .hamburguer {
     display: block;
   }
-  .project-description {
-    padding: 0 13px;
-  }
-  .contact-paragraph h5 {
-    width: 100%;
-  }
-  .contact-paragraph {
-    padding: 4px 8px;
-    text-align: left;
-    max-width: 85%;
-    font-size: 18px;
+  .project-description,
+  .projects-header-paragraph {
+    padding: 0 20px;
   }
 
+  .contact-paragraph {
+    padding: 10px 20px;
+    text-align: left;
+
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-paragraph p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  label {
+    font-size: 16px;
+  }
   .project-item {
     flex: 100%;
   }
   .contact {
     justify-content: center;
-  }
-  .contact-paragraph {
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
 }
