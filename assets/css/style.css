@@ -163,12 +163,10 @@ h3 {
 #button {
   background: inherit;
   border: 4px #ff6347 solid;
-
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  /* color: rgba(255, 255, 255, 0.75); */
+  box-shadow: 0px 4px 4px rgba(93, 92, 92, 0.25);
   border-radius: 10px;
   width: 250px;
-  font-size: 0.9em;
+  font-size: 0.8em;
   letter-spacing: 1px;
   font-family: "Red Hat Display", sans-serif;
   padding: 8px;
@@ -430,10 +428,6 @@ label {
     margin-left: 190px;
   }
 
-  /* .homepage h1,
-  h3 {
-    margin-bottom: 20px;
-  } */
   .sidenav {
     width: 190px;
   }
@@ -498,6 +492,7 @@ label {
   .homepage {
     margin-left: auto;
     padding: 50px;
+    height: auto;
   }
 
   .homepage h1,
@@ -525,6 +520,11 @@ label {
 
   .projects-header h2 {
     padding: 0 20px;
+    font-size: 30px;
+  }
+
+  .contact-header h2 {
+    font-size: 30px;
   }
 
   .contact-paragraph {
