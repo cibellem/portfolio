@@ -15,19 +15,15 @@ body {
   overflow-x: hidden;
 }
 h1 {
-  font-size: 1.8em;
   font-size: 45px;
   font-weight: bold;
   color: rgba(3, 12, 41, 0.85);
 }
 h2 {
-  font-size: 1.5em;
   font-size: 35px;
-
   color: rgba(3, 12, 41, 0.85);
 }
 h3 {
-  font-size: 1.15em;
   font-size: 30px;
 
   color: rgba(3, 12, 41, 0.85);
@@ -281,14 +277,17 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  /* margin-bottom: 50px; */
 }
-
+.contact-form h2 {
+  text-align: center;
+}
+.contact-form span,
 .contact-header span {
   color: tomato;
 }
-
+.contact-form {
+  margin-bottom: 20px;
+}
 .contact-header p {
   font-size: 0.7em;
   margin-bottom: 30px;
@@ -313,7 +312,9 @@ h3 {
 }
 
 /* Contact Form  */
-
+/* .contact-form h2 {
+  font-size: 30px;
+} */
 .container {
   display: flex;
   justify-content: center;
@@ -523,7 +524,8 @@ label {
     font-size: 30px;
   }
 
-  .contact-header h2 {
+  .contact-header h2,
+  .contact-form h2 {
     font-size: 30px;
   }
 
