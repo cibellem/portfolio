@@ -180,7 +180,7 @@ h3 {
 
 #button:hover {
   background-color: inherit;
-  transition: 0.5s;
+  transition: ease-in-out 1s;
   color: rgb(55, 53, 47);
   border: 2px #d798da solid;
 }
@@ -228,10 +228,11 @@ h3 {
 }
 
 .projects-header h2 {
-  padding: 0 50px;
+  padding: 10px 50px;
+  text-align: center;
 }
 .project-description {
-  padding: 0 50px;
+  padding: 10px 50px;
   line-height: 1.5em;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -359,7 +360,7 @@ label {
 }
 
 #submit {
-  background-color: rgb(142, 212, 135);
+  background-color: rgb(123, 207, 158);
   color: white;
   padding: 12px 20px;
   border: none;
@@ -369,11 +370,13 @@ label {
   width: 50%;
   margin: auto;
   font-size: 18px;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.815);
 }
 
 #submit:hover {
-  box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.356);
   color: black;
+  transition: 0.8s;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.144);
 }
 
 .container {
@@ -457,7 +460,6 @@ label {
 
   .contact-paragraph {
     margin-top: 20px;
-    margin-bottom: 20px;
   }
   .contact {
     width: 90%;
@@ -516,9 +518,9 @@ label {
   .hamburguer {
     display: block;
   }
-  .project-description,
+
   .projects-header-paragraph {
-    padding: 0 20px;
+    padding: 5px 20px;
   }
 
   .projects-header h2 {

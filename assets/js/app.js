@@ -17,7 +17,7 @@ function openNav() {
   sidenav.style.display = "flex ";
   sidenav.style.transition = "ease-in-out 1s;";
   closeBtn.style.display = "block";
-  document.getElementById("mySidenav").style.width = "150px";
+  document.getElementById("mySidenav").style.width = "250px";
 }
 
 /* Set the width of the side navigation to 0 */
