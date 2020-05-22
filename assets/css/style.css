@@ -497,8 +497,9 @@ label {
     line-height: 1.3em;
   }
   .homepage {
+    margin-top: 20px;
     margin-left: auto;
-    padding: 50px;
+    padding: 5px 30px;
     height: auto;
   }
 
@@ -512,11 +513,9 @@ label {
   }
   .homepage h3 {
     font-size: 20px;
-    max-width: 80%;
+    max-width: 100%;
   }
-  .homepage {
-    justify-content: start;
-  }
+ 
   .hamburguer {
     display: block;
   }
@@ -535,8 +534,12 @@ label {
     font-size: 30px;
   }
 
+  #button{
+    width: 150px;
+  }
+
   .contact-paragraph {
-    padding: 10px 20px;
+    padding: 15px 20px;
     text-align: left;
 
     margin-top: 20px;
