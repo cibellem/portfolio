@@ -31,7 +31,7 @@ h3 {
 /* The sidebar menu */
 .sidenav {
   height: 100%; /* Full-height:*/
-  width: 300px; /* Set the width of the sidebar */
+  width: 250px; /* Set the width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -40,12 +40,9 @@ h3 {
   flex-direction: column;
   justify-content: center;
   overflow: auto;
-  background-color: steelblue;
-  /* border-right: 1px solid rgba(192, 192, 192, 0.486); */
+  background-color: rgb(95, 160, 127);
   box-shadow: 4px 3px 6px rgba(0, 0, 0, 0.226);
-  /* padding-top: 20px; */
   transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
-  /* transition: ease-in-out 1s; */
 }
 
 #mySidenav {
@@ -54,6 +51,7 @@ h3 {
 .hamburguer {
   display: none;
   font-size: 2rem;
+  transition: ease-in-out 1s;
   padding-left: 10px;
   color: #dfdddd;
   cursor: pointer;
@@ -61,20 +59,22 @@ h3 {
 
 /* The navigation menu links */
 .sidenav .navlink {
-  padding: 30px;
+  padding: 15px 30px;
   text-decoration: none;
-  font-size: 28px;
+  font-size: 26px;
   color: whitesmoke;
   display: block;
   text-align: left;
   display: flex;
   align-items: baseline;
+  font-weight: 500;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
 a.navlink:hover {
-  background-color: whitesmoke;
-  color: rgb(55, 53, 47);
+  background-color: rgba(0, 0, 0, 0.246);
+  color: whitesmoke;
+
   transition: 1s;
 }
 .nav-icon:hover {
@@ -87,8 +87,8 @@ a.navlink:hover {
   justify-content: space-between;
   position: absolute;
   margin-top: 45vh;
-  padding: 0 50px;
-  font-size: 1rem;
+  padding: 0 30px;
+  font-size: 1.2rem;
 }
 .contact-icons i {
   color: rgba(0, 0, 0, 0.246);
@@ -126,11 +126,11 @@ a.navlink:hover {
 }
 
 .logo-img {
-  width: 65%;
+  width: 70%;
 }
 /*------- Style page ------ */
 .main {
-  margin-left: 300px;
+  margin-left: 250px;
 }
 
 /* HomagePage Styles  */
@@ -141,7 +141,7 @@ a.navlink:hover {
   flex-direction: column;
   justify-content: center;
   align-items: left;
-  margin-left: 200px;
+  margin-left: 150px;
 }
 
 .homepage h3 {
@@ -161,7 +161,7 @@ h3 {
   background: inherit;
   box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.815);
   border-radius: 5px;
-  width: 250px;
+  width: 200px;
   font-size: 0.8em;
   letter-spacing: 1px;
   font-family: "Red Hat Display", sans-serif;
@@ -173,16 +173,16 @@ h3 {
   flex-direction: row;
   justify-content: space-evenly;
   cursor: pointer;
-  background-color: #e4bee6;
+  background-color: palevioletred;
   color: #ffffff;
-  border: 2px #d798da solid;
+  border: 2px palevioletred solid;
 }
 
 #button:hover {
   background-color: inherit;
-  transition: ease-in-out 1s;
-  color: rgb(55, 53, 47);
-  border: 2px #d798da solid;
+  transition: ease-in-out 0.8s;
+  color: silver;
+  border: 2px palevioletred solid;
 }
 
 /* Section Separator  */
@@ -357,7 +357,7 @@ label {
 }
 
 #submit {
-  background-color: rgb(123, 207, 158);
+  background-color: rgb(10, 141, 60);
   color: white;
   padding: 12px 20px;
   border: none;
