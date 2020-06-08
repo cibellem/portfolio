@@ -260,8 +260,9 @@ h3 {
 }
 
 .projects-img {
-  max-width: 70%;
-  opacity: 0.8;
+  max-width: auto;
+  max-height: 250px;
+  opacity: 0.9;
   border-radius: 10px;
   box-shadow: inset 0px 0px 38px 43px rgba(13, 6, 24, 0.226);
   padding: 10px;
