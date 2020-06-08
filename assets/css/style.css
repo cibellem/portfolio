@@ -260,7 +260,7 @@ h3 {
 }
 
 .projects-img {
-  max-width: auto;
+  max-width: 80%;
   max-height: 250px;
   opacity: 0.9;
   border-radius: 10px;
